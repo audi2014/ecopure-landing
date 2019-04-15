@@ -5,8 +5,9 @@
 body {
 	min-width: 320px;
 	position: relative;
-	font-size: 22px;
-	line-height: 48px;
+	font-size: 18px;
+	// line-height: 48px;
+	line-height: 1;
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
@@ -17,7 +18,105 @@ body {
 }
 
 h1 {
-	margin-top: 20px;
+	font-size: 2.667em;	//48px
+}
+
+h2 {
+	font-size: 2.556em;	//46px
+}
+
+h3 {
+	font-size: 2.000em;	//36px
+}
+
+h4 {
+	font-size: 1.444em;	//26px
+}
+
+h5 {
+	font-size: 1.333em;	//24px
+}
+
+.button {
+	padding: 16px 40px;
+	font-weight: 400;
+	color: #fff;
+	background-color: $accent;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	cursor: pointer;
+
+	&.blue {
+		background-color: $blue;
+	}
+}
+
+.nav-link {
+	color: $text;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: $accent;
+		text-decoration: none;
+	}
+}
+
+
+header {
+	height: 75px;
+	width: 100%;
+
+	.navigation {
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		.logo {
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		
+		ul {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li {
+				a {
+					padding: 10px;
+				}
+
+				&:not(:last-child) {
+					margin-right: 40px;
+				}
+			}
+		}
+
+		.account-container {
+			display: flex;
+			align-items: center;
+
+			button {
+				margin-right: 30px;
+			}
+
+			svg {
+				width: 26px;
+				height: 27px;
+				fill: #939598;
+			}
+		}
+
+	}
+}
+
+
+.top-line-hiring {
+	height: 58px;
+	background-color: $blue;
 }
 
 

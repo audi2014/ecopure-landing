@@ -1,5 +1,5 @@
 {
-  "name": "simple-page-boilerplate",
+  "name": "ecopure-landing",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "del": "^4.0.0",
+    "del": "^4.1.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -22,12 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onevoone/simple-page-boilerplate.git"
+    "url": "git+https://github.com/onevoone/ecopure-landing.git"
   },
   "author": "onevoone",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/onevoone/simple-page-boilerplate/issues"
-  },
-  "homepage": "https://github.com/onevoone/simple-page-boilerplate"
+    "url": "https://github.com/onevoone/ecopure-landing/issues"
+  }
 }
