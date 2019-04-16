@@ -5,17 +5,54 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	header {
+		.navigation {
+			.logo > a > img {
+				width: 100%;
+			}
+		}
+		.account-container {
+			button {
+				padding: 10px 22px;
+			}
+		}
+	}
+
+	.top-location-line .current-location span {
+		font-size: 1em;
+	}
+
+	.top-location-line .hiring-container {
+		transform: translateX(5%);
+	}
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+	.top-location-line {
+		.current-location .cur-loc-label {
+			display: none;
+		}
+		.hiring-container {
+			transform: translateX(52%);
+		}
+	}
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+	.top-location-line {
+		.cur-loc-info {
+			height: 100%;
+			padding: 3px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.hiring-container {
+			display: none;
+		}
+	}
 }
 
 // ≥576px

@@ -31,37 +31,61 @@
 	<!-- start header -->
 	<header>
 
-		<nav class="navigation">
+		<div class="navigation">
 
 			<div class="container">
 				<div class="row">
 
-					<div class="col-2">
+					<div class="col-4 col-md-3 col-lg-2">
 						<div class="logo">
 							<a href="/">
 								<img src="img/Logo.png" alt="logo" />
 							</a>
 						</div>
 					</div>
-					
-					<div class="col-7">
-						<ul>
-							<li>
-								<a class="nav-link" href="/">How it Works</a>
+
+					<nav class="d-lg-flex col-7" id="my-menu">
+						<ul class="main-nav" >
+							<li class="selected">
+								<a class="main-nav-link" href="/">How it Works</a>
+							</li>
+							<li class="nav-dropdown">
+								<a class="main-nav-link">EcoPure Advanture</a>
+								<ul class="nav-dropdown-menu">
+									<li>
+										<a class="main-nav-link" href="/">Why EcoPure Home?</a>
+									</li>
+									<li>
+										<a class="main-nav-link" href="/">Technology</a>
+									</li>
+									<li>
+										<a class="main-nav-link" href="/">EcoPure vs. Traditional Cleaning</a>
+									</li>
+									<li>
+										<a class="main-nav-link" href="/">Aromatherapy</a>
+									</li>
+									<li>
+										<a class="main-nav-link" href="/">Gallery</a>
+									</li>
+								</ul>
 							</li>
 							<li>
-								<a class="nav-link" href="/">EcoPure Advanture</a>
+								<a class="main-nav-link" href="/">Franchising</a>
 							</li>
 							<li>
-								<a class="nav-link" href="/">Franchising</a>
+								<a class="main-nav-link" href="/">Property Managers</a>
 							</li>
 						</ul>
-					</div>
+					</nav>
 
 
-					<div class="col-3 account-container">
-						<button class="button">Book Now</button>
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304 320"
+					<div class="col-6 offset-0 col-md-4 offset-md-4 col-lg-3 offset-lg-0 account-container justify-content-end">
+						<div class="row">
+							<button class="button">Book Now</button>
+							<button class="button primary">Log in</button>
+
+						</div>
+						<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304 320"
 							xml:space="preserve">
 							<g>
 								<path class="st0" d="M152,163c41,0,78,16,106,43c27,27,45,63,46,104v10h-10H10H0v-10c1-41,19-78,46-104C73,179,111,163,152,163z
@@ -69,25 +93,117 @@
 								<path class="st0" d="M152,0c41,0,75,33,75,75c0,41-34,75-75,75s-75-33-75-75C77,34,110,0,152,0z M152,20c-30,0-55,25-55,55
 														s25,55,55,55s55-25,55-55S182,20,152,20z" />
 							</g>
+						</svg> -->
+					</div>
+
+					<div class="d-lg-none col-2 col-md-1 burger-menu" id="burger-mmenu" role="button">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+							y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" />
+							<path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" />
+							<path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" />
 						</svg>
 					</div>
 
 				</div>
 			</div>
 
-		</nav>
+		</div>
 	
 	</header>
 	<!-- end header -->
 	
-	<!-- start feedback section -->
-	<section class="top-line-hiring">
 
+
+	<!-- start feedback section -->
+	<section class="top-location-line">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-sm-6">
+					<div class="current-location">
+						<span class="cur-loc-label">Your current location:</span> 
+						<div class="cur-loc-info">
+							<span class="cur-loc-city">Hoboken, NJ</span>
+							<span class="cur-loc-phone">(201) 555-5555</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-8 col-sm-6">
+					<div class="current-location justify-content-end ">
+						<span class="cur-loc-label">Change location:</span> 
+						<form class="cur-loc-form">
+							<input type="text" placeholder="Postal / Zip code" required="">
+							<button class="button" type="submit">Go!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hiring-container">
+			<span>We're Hiring</span>
+		</div>
 	</section>
 	<!-- end feedback section -->
 
+
+
+	<!-- start local menu section -->
+	<section class="local-menu">
+
+		<div class="container">
+			<div class="row">
 		
 
+				<div class="col-sm-12 col-md-5">
+					<ul class="local-nav-list">
+						<li>
+							<a class="main-nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-dropdown">
+							<a class="main-nav-link">Services</a>
+							<ul class="nav-dropdown-menu">
+								<li>
+									<a class="main-nav-link" href="/">Apartment Cleaning</a>
+								</li>
+								<li>
+									<a class="main-nav-link" href="/">House Cleaning</a>
+								</li>
+								<li>
+									<a class="main-nav-link" href="/">Move-Out Cleaning</a>
+								</li>
+								<li>
+									<a class="main-nav-link" href="/">Carpet Cleaning</a>
+								</li>
+								<li>
+									<a class="main-nav-link" href="/">Commercial & Office Cleaning</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="main-nav-link" href="/">Rates</a>
+						</li>
+						<li>
+							<a class="main-nav-link" href="/">Areas We Serve</a>
+						</li>
+					</ul>
+				</div>
+		
+			</div>
+		</div>
+
+	</section>
+	<!-- end local menu section -->
+
+		
+
+	<section class="location-section">
+
+	</section>
 
 
 
