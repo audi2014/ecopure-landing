@@ -28,5 +28,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/onevoone/ecopure-landing/issues"
+  },
+  "dependencies": {
+    "mmenu-light": "^1.0.3"
   }
 }
