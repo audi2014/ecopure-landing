@@ -17,6 +17,10 @@ body {
 	height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+	color: $heading;
+}
+
 h1 {
 	font-size: 2.667em;	//48px
 }
@@ -53,6 +57,13 @@ h5 {
 	&.primary {
 		color: $accent;
 		background-color: transparent;
+	}
+
+	&.large {
+		padding: 27px 100px 25px 100px;
+		font-size: 1.444em;
+		font-weight: 400;
+		border-width: 3px;
 	}
 }
 
@@ -356,9 +367,7 @@ header {
 }
 
 
-.location-section {
-	// height: 100vh;
-}
+@import "home";
 
 
 @import "media";
