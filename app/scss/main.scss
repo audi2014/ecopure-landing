@@ -56,7 +56,7 @@ h5 {
 	}
 }
 
-a.main-nav-link {
+.main-nav-link {
 	color: $text;
 	transition: color 0.3s ease;
 	cursor: pointer;
@@ -68,14 +68,10 @@ a.main-nav-link {
 }
 
 
-.nav-dropdown {
+ul > li.nav-dropdown {
 	position: relative;
 
-	&:hover {
-		color: $accent;
-	}
-
-	ul.nav-dropdown-menu {
+	& > ul.nav-dropdown-menu:not(.mm--open) {
 		width: 270px;
 		display: none;
 		
@@ -113,7 +109,9 @@ a.main-nav-link {
 
 
 	&:hover {
-		.nav-dropdown-menu {
+		color: $accent;
+
+		& > ul.nav-dropdown-menu:not(.mm--open) {
 			display: flex;
 			flex-direction: column;
 		}
@@ -131,16 +129,14 @@ a.main-nav-link {
 	}
 }
 
-.mm.mm--home {
+#my-menu {
 	z-index: 1;
 }
 
 
 header {
-	height: 75px;
-
 	.navigation {
-		height: 100%;
+		height: 75px;
 		display: flex;
 		align-items: center;
 
@@ -151,7 +147,7 @@ header {
 		}
 		
 		ul.main-nav {
-			height: 75px;
+			// height: 75px;
 			display: flex;
 			align-items: center;
 			margin: 0;
@@ -163,7 +159,7 @@ header {
 				display: flex;
 				align-items: center;
 
-				a.main-nav-link {
+				.main-nav-link {
 					padding: 10px;
 				}
 
@@ -183,14 +179,21 @@ header {
 			display: flex;
 			align-items: center;
 
-			svg {
+			div.user {
 				margin-left: 30px;
-				width: 26px;
-				height: 27px;
-				fill: #939598;
+				margin-right: 20px;
+				color: #939598;
+				display: flex;
+				align-items: center;
+
+				& > svg {
+					margin-right: 10px;
+					width: 26px;
+					height: 27px;
+					fill: #939598;
+				}
 			}
 		}
-
 	}
 }
 
@@ -354,8 +357,7 @@ header {
 
 
 .location-section {
-	background-color: lightgoldenrodyellow;
-	height: 100vh;
+	// height: 100vh;
 }
 
 

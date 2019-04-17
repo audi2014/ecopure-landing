@@ -3,14 +3,19 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+// ≥1200px (1320)
 @include media-breakpoint-down(lg) {
 	header {
 		.navigation {
 			.logo > a > img {
 				width: 100%;
 			}
+
+			ul.main-nav li:not(:last-child) {
+				margin-right: 20px;
+			}
 		}
+
 		.account-container {
 			button {
 				padding: 10px 22px;
@@ -29,12 +34,28 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+
+	header .navigation ul.main-nav {
+		align-items: flex-start;
+		
+		li {
+			height: inherit;
+			width: 100%;
+
+			.main-nav-link {
+				width: 100%;
+				height: 100%;
+				padding: 13px 20px;
+			}
+		}
+	}
+
 	.top-location-line {
 		.current-location .cur-loc-label {
 			display: none;
 		}
 		.hiring-container {
-			transform: translateX(52%);
+			display: none;
 		}
 	}
 }
@@ -57,7 +78,34 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	header {
+		.navigation {
+			height: inherit;
+			.logo a {
+				padding: 20px;
+				margin: 0 auto;
+			}
+		}
+		.account-container > div {
+			padding-left: 15px;
+		}
+	}
 
+	.local-menu ul.local-nav-list { 
+		height: 100%;
+		margin-left: 0;
+
+		li:not(:last-child) a {
+			border: none;
+		}
+	}
+
+	.local-menu {
+		ul>li.nav-dropdown>ul.nav-dropdown-menu:not(.mm--open) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 
 

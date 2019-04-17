@@ -36,7 +36,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-4 col-md-3 col-lg-2">
+					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
 						<div class="logo">
 							<a href="/">
 								<img src="img/Logo.png" alt="logo" />
@@ -44,13 +44,14 @@
 						</div>
 					</div>
 
-					<nav class="d-lg-flex col-7" id="my-menu">
-						<ul class="main-nav" >
+					<!-- start main menu -->
+					<nav class="d-lg-flex col-lg-6 col-xl-7" id="my-menu">
+						<ul class="main-nav flex-column flex-lg-row">
 							<li class="selected">
 								<a class="main-nav-link" href="/">How it Works</a>
 							</li>
 							<li class="nav-dropdown">
-								<a class="main-nav-link">EcoPure Advanture</a>
+								<span class="main-nav-link">EcoPure Advanture</span>
 								<ul class="nav-dropdown-menu">
 									<li>
 										<a class="main-nav-link" href="/">Why EcoPure Home?</a>
@@ -77,23 +78,28 @@
 							</li>
 						</ul>
 					</nav>
+					<!-- end main menu -->
 
 
-					<div class="col-6 offset-0 col-md-4 offset-md-4 col-lg-3 offset-lg-0 account-container justify-content-end">
+					<div class="col-10 col-sm-6 offset-sm-0 col-md-5 offset-md-3 col-lg-4 offset-lg-0 col-xl-3 account-container flex-row justify-content-start justify-content-sm-end">
 						<div class="row">
+
 							<button class="button">Book Now</button>
-							<button class="button primary">Log in</button>
+							<!-- <button class="button primary">Log in</button> -->
+							<div class="user">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304 320"
+									xml:space="preserve">
+									<g>
+										<path class="st0" d="M152,163c41,0,78,16,106,43c27,27,45,63,46,104v10h-10H10H0v-10c1-41,19-78,46-104C73,179,111,163,152,163z
+																M244,220c-24-23-56-37-92-37s-68,14-92,37c-22,21-36,49-39,80h263C281,269,266,240,244,220z" />
+										<path class="st0" d="M152,0c41,0,75,33,75,75c0,41-34,75-75,75s-75-33-75-75C77,34,110,0,152,0z M152,20c-30,0-55,25-55,55
+																s25,55,55,55s55-25,55-55S182,20,152,20z" />
+									</g>
+								</svg>
+								<span>Boris</span>
+							</div>
 
 						</div>
-						<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304 320"
-							xml:space="preserve">
-							<g>
-								<path class="st0" d="M152,163c41,0,78,16,106,43c27,27,45,63,46,104v10h-10H10H0v-10c1-41,19-78,46-104C73,179,111,163,152,163z
-														M244,220c-24-23-56-37-92-37s-68,14-92,37c-22,21-36,49-39,80h263C281,269,266,240,244,220z" />
-								<path class="st0" d="M152,0c41,0,75,33,75,75c0,41-34,75-75,75s-75-33-75-75C77,34,110,0,152,0z M152,20c-30,0-55,25-55,55
-														s25,55,55,55s55-25,55-55S182,20,152,20z" />
-							</g>
-						</svg> -->
 					</div>
 
 					<div class="d-lg-none col-2 col-md-1 burger-menu" id="burger-mmenu" role="button">
@@ -118,13 +124,13 @@
 	
 
 
-	<!-- start feedback section -->
+	<!-- start location section -->
 	<section class="top-location-line">
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-4 col-sm-6">
-					<div class="current-location">
+				<div class="col-12 col-sm-4 col-md-6">
+					<div class="current-location justify-content-center justify-content-sm-start">
 						<span class="cur-loc-label">Your current location:</span> 
 						<div class="cur-loc-info">
 							<span class="cur-loc-city">Hoboken, NJ</span>
@@ -132,8 +138,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-8 col-sm-6">
-					<div class="current-location justify-content-end ">
+				<div class="col-12 col-sm-8 col-md-6">
+					<div class="current-location justify-content-center justify-content-sm-end">
 						<span class="cur-loc-label">Change location:</span> 
 						<form class="cur-loc-form">
 							<input type="text" placeholder="Postal / Zip code" required="">
@@ -148,7 +154,7 @@
 			<span>We're Hiring</span>
 		</div>
 	</section>
-	<!-- end feedback section -->
+	<!-- end location section -->
 
 
 
@@ -159,8 +165,8 @@
 			<div class="row">
 		
 
-				<div class="col-sm-12 col-md-5">
-					<ul class="local-nav-list">
+				<div class="col-12">
+					<ul class="local-nav-list flex-column flex-sm-row">
 						<li>
 							<a class="main-nav-link" href="#about">About</a>
 						</li>
