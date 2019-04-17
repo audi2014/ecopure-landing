@@ -67,6 +67,33 @@ h5 {
 	}
 }
 
+.link-as-button {
+	padding: 16px 40px;	
+	font-weight: 400;
+	color: #fff;
+	background-color: $accent;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.large {
+		padding: 15px 70px 15px 70px;
+		font-size: 1.333em;
+		font-weight: 400;
+		border-width: 3px;
+	}
+
+	&.primary-light-green {
+		color: $accent-light;
+		background-color: transparent;
+		border-color: $accent-light;
+	}
+}
+
 .main-nav-link {
 	color: $text;
 	transition: color 0.3s ease;
