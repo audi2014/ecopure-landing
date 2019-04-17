@@ -137,13 +137,10 @@ h5 {
 
 
 
-
-
 .how-it-works-section {
 	width: 100%;
 	height: 640px;
 	position: relative;
-
 
 	.stamp {
 		position: absolute;
@@ -173,17 +170,12 @@ h5 {
 		}
 	}
 
-
-
 	.hiw-wrapper {
 		padding-top: 180px;
-
-		// padding-top: 90px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		
-
 		h3 {
 			text-align: center;
 			font-weight: 400;
@@ -222,11 +214,44 @@ h5 {
 
 
 
+.instagram-images-section {
+	padding-top: 80px;
+	padding-bottom: 90px;
+	background-color: #f5f4f4;
+
+	h3 {
+		text-align: center;
+		font-weight: 400;
+	}
+
+	.instagram-images {
+		margin-top: 50px;
+
+		.ins-img-wrapper {
+			margin-bottom: 30px;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	.instagram-caption {
+		text-align: center;
+		margin: 0;
+		color: $text;
+		font-family: "Signika Light";
+	}
+}
 
 
 
 
+.advantage-section {
+	width: 100%;
+	height: 640px;
+	position: relative;
 
+}
 
 
 
