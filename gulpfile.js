@@ -33,8 +33,13 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/mmenu/mmenu-light.js',
+		'app/libs/jquery/dist/jquery.js',
+		'app/libs/jquery-ui/jquery-ui.js',
+		'app/libs/scrolltoid/jquery.malihu.PageScroll2id.js',
+		'app/libs/magnificpopup/dist/jquery.magnific-popup.min.js',
+		'app/libs/matchheight/jquery.matchHeight.js',
+		'app/libs/prettyembed/jquery.prettyembed.js',
+		'app/libs/slick/slick.min.js',
 		'app/js/common.js', // Always at the end
 	])
 	.pipe(concat('scripts.min.js'))

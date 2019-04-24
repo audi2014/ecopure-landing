@@ -1,527 +1,368 @@
-<!DOCTYPE html>
-<html lang="eu">
-
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
-	<title>Ecopure</title>
-	<meta name="description" content="">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.css">
+    <link rel="stylesheet" href="libs/jquery-ui/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="libs/magnificpopup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/apple-touch-icon-180x180.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
-
-	<link rel="stylesheet" href="css/main.min.css">
-
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
-
 <body>
 
-	<!-- start header -->
-	<header>
-
-		<div class="navigation">
-
-			<div class="container">
-				<div class="row">
-
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<div class="logo">
-							<a href="/">
-								<img src="img/Logo.png" alt="logo" />
-							</a>
-						</div>
-					</div>
-
-					<!-- start main menu -->
-					<nav class="d-lg-flex col-lg-6 col-xl-7" id="my-menu">
-						<ul class="main-nav flex-column flex-lg-row">
-							<li class="selected">
-								<a class="main-nav-link" href="/">How it Works</a>
-							</li>
-							<li class="nav-dropdown">
-								<span class="main-nav-link">EcoPure Advanture</span>
-								<ul class="nav-dropdown-menu">
-									<li>
-										<a class="main-nav-link" href="/">Why EcoPure Home?</a>
-									</li>
-									<li>
-										<a class="main-nav-link" href="/">Technology</a>
-									</li>
-									<li>
-										<a class="main-nav-link" href="/">EcoPure vs. Traditional Cleaning</a>
-									</li>
-									<li>
-										<a class="main-nav-link" href="/">Aromatherapy</a>
-									</li>
-									<li>
-										<a class="main-nav-link" href="/">Gallery</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a class="main-nav-link" href="/">Franchising</a>
-							</li>
-							<li>
-								<a class="main-nav-link" href="/">Property Managers</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- end main menu -->
-
-
-					<div class="col-10 col-sm-6 offset-sm-0 col-md-5 offset-md-3 col-lg-4 offset-lg-0 col-xl-3 account-container flex-row justify-content-start justify-content-sm-end">
-						<div class="row">
-
-							<button class="button">Book Now</button>
-							<!-- <button class="button primary">Log in</button> -->
-							<div class="user">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304 320"
-									xml:space="preserve">
-									<g>
-										<path class="st0" d="M152,163c41,0,78,16,106,43c27,27,45,63,46,104v10h-10H10H0v-10c1-41,19-78,46-104C73,179,111,163,152,163z
-																M244,220c-24-23-56-37-92-37s-68,14-92,37c-22,21-36,49-39,80h263C281,269,266,240,244,220z" />
-										<path class="st0" d="M152,0c41,0,75,33,75,75c0,41-34,75-75,75s-75-33-75-75C77,34,110,0,152,0z M152,20c-30,0-55,25-55,55
-																s25,55,55,55s55-25,55-55S182,20,152,20z" />
-									</g>
-								</svg>
-								<span>Boris</span>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="d-lg-none col-2 col-md-1 burger-menu" id="burger-mmenu" role="button">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-							y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-							<path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
-							c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" />
-							<path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
-							c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" />
-							<path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
-							c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" />
-						</svg>
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-	
-	</header>
-	<!-- end header -->
-	
-
-
-	<!-- start location section -->
-	<section class="top-location-line">
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-4 col-md-6">
-					<div class="current-location justify-content-center justify-content-sm-start">
-						<span class="cur-loc-label">Your current location:</span> 
-						<div class="cur-loc-info">
-							<span class="cur-loc-city">Hoboken, NJ</span>
-							<span class="cur-loc-phone">(201) 555-5555</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-sm-8 col-md-6">
-					<div class="current-location justify-content-center justify-content-sm-end">
-						<span class="cur-loc-label">Change location:</span> 
-						<form class="cur-loc-form">
-							<input type="text" placeholder="Postal / Zip code" required="">
-							<button class="button" type="submit">Go!</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- <div class="hiring-container">
-			<span>We're Hiring</span>
-		</div> -->
-	</section>
-	<!-- end location section -->
-
-
-
-	<!-- start local menu section -->
-	<!-- <section class="local-menu">
-
-		<div class="container">
-			<div class="row">
-		
-
-				<div class="col-12">
-					<ul class="local-nav-list flex-column flex-sm-row">
-						<li>
-							<a class="main-nav-link" href="#about">About</a>
-						</li>
-						<li class="nav-dropdown">
-							<a class="main-nav-link">Services</a>
-							<ul class="nav-dropdown-menu">
-								<li>
-									<a class="main-nav-link" href="/">Apartment Cleaning</a>
-								</li>
-								<li>
-									<a class="main-nav-link" href="/">House Cleaning</a>
-								</li>
-								<li>
-									<a class="main-nav-link" href="/">Move-Out Cleaning</a>
-								</li>
-								<li>
-									<a class="main-nav-link" href="/">Carpet Cleaning</a>
-								</li>
-								<li>
-									<a class="main-nav-link" href="/">Commercial & Office Cleaning</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="main-nav-link" href="/">Rates</a>
-						</li>
-						<li>
-							<a class="main-nav-link" href="/">Areas We Serve</a>
-						</li>
-					</ul>
-				</div>
-		
-			</div>
-		</div>
-
-	</section> -->
-	<!-- end local menu section -->
-
-
-
-	<!-- start splash section -->
-	<section class="homepage-splash-section">
-		<img class="splash-bg" src="img/homepage/homepage_splash.png" alt="" />
-		<div class="container">
-
-			<div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-				<!-- <div class="info d-flex flex-column align-items-center justify-content-center"> -->
-				<div class="info">
-					<h1>Genuinely Healthy, Immaculate Home</h1>
-					<h5>Premium quality home cleaning as low as $80</h5>
-					<button type="button" class="button large">Get Started</button>
-				</div>
-			</div>
-			<!-- <div class="col-4">
-			</div> -->
-		</div>
-	</section>
-	<!-- end splash section -->
-
-
-
-	<!-- start why-ecopure-section section -->
-	<section class="why-ecopure-section">
-		<!-- <div class="container"> -->
-			<h1>Why EcoPure</h1>
-
-				<div class="four-columns-list">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-12 col-md-3 fcl-item">
-								<div class="fcl-item-img-wrapper">
-									<img src="img/homepage/icon_01.svg" alt="" />
-								</div>
-								<div class="fcl-contant">
-									<h5>No shortcuts on the cleaning</h5>
-									<p class="fcl-contant-desc">Training and testing our team is our religion</p>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-3 fcl-item">
-								<div class="fcl-item-img-wrapper">
-									<img src="img/homepage/Icon_02.svg" alt="" />
-								</div>
-								<div class="fcl-contant">
-									<h5>Wet Dust Can’t Fly</h5>
-									<p class="fcl-contant-desc">Our water-based technology kills dust mites</p>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-3 fcl-item">
-								<div class="fcl-item-img-wrapper">
-									<img src="img/homepage/icon_03.svg" alt="" />
-								</div>
-								<div class="fcl-contant">
-									<h5>The most 5-star reviews</h5>
-									<p class="fcl-contant-desc">Our quality and sophistication wows regularly</p>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-3 fcl-item">
-								<div class="fcl-item-img-wrapper">
-									<img src="img/homepage/Icon_04.svg" alt="" />
-								</div>
-								<div class="fcl-contant">
-									<h5>Green and affordable</h5>
-									<p class="fcl-contant-desc">Expert-performed cleanliness from $80 per clean</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		<!-- </div> -->
-	</section>
-	<!-- end why-ecopure-section section -->
-
-
-
-	<!-- start how it works section -->
-	<section class="how-it-works-section">
-		<div class="stamp">
-			<p>
-				Live a Cleaner, Healthier Life
-			</p>
-		</div>
-		<img class="splash-bg" src="img/homepage/how_it_works.jpg" alt="" />
-		<div class="container">
-			<div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-				<div class="hiw-wrapper">
-					<h3>How it works</h3>
-					<div class="explain-list">
-						<ul>
-							<li>Fill out Book Online form</li>
-							<li>Get on a Welcome Call with our manager</li>
-							<li>Return happy to immaculate home, every time</li>
-						</ul>
-					</div>
-					<a href="#" class="link-as-button large primary-light-green">Learn more</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end how it works section -->
-
-
-
-	<!-- start instagram-images-section -->
-	<section class="instagram-images-section">
-		<h3>Live it. Love it. Tag it #ecopurehomepics</h3>
-		
-		<div class="instagram-images">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-12 offset-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-12 offset-xl-0">
-						<div class="row instagram-images-list">
-							<div class="ins-img-wrapper"><img src="img/homepage/girl.jpg" alt="Girl with gift"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/blue_towel.jpg" alt="Blue towel"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/flowers.jpg" alt="Flowers"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/sofa.jpg" alt="Sofa"></div>
-						</div>
-					</div>
-
-					<div class="col-12 offset-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-12 offset-xl-0">
-						<div class="row instagram-images-list">
-							<div class="ins-img-wrapper"><img src="img/homepage/towel.jpg" alt="White towel"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/towel.jpg" alt="White towel"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/bedroom.jpg" alt="Bedroom"></div>
-							<div class="ins-img-wrapper"><img src="img/homepage/kitchen.jpg" alt="Kitchen"></div>
-						</div>
-					</div>
-
-				</div>
-			</div>		
-		</div>
-
-		<p class="instagram-caption">Our live instagram feed <a href="https://www.instagram.com/ecopurehome/" class="link">@ecopurehome</a></p>
-	</section>
-	<!-- end instagram-images-section -->
-
-
-	<!-- start advantage section -->
-	<section class="advantage-section">
-		<img class="splash-bg" src="img/homepage/advantage.jpg" alt="" />
-		<div class="advantage-desc-wrapper">
-			<div class="advantage-desc">
-
-				<h3>EcoPure Advantage</h3>
-				<p>
-					EcoPure Cleaning Method is different. We use no air polluting brooms, vacuum cleaners or dusters. We use the
-					state-of-the-art Rainbow Cleaning System that is better for your health, your carpet, furniture, and the environment.	
-				</p>
-				<a href="#" class="link-as-button large no-border">Learn More</a>
-			</div>
-		</div>
-	</section>
-	<!-- end advantage section -->
-
-
-	<!-- start customer-says section -->
-	<section class="customer-says-section">
-		<h3>Our customers says:</h3>
-
-		<div class="container">
-			<div class="row">
-				<div class="review-list">
-
-					<div class="simple-review">
-						<span class="review-rating"></span>
-						<div class="simple-review-text">
-							<p>Lorem ipsum dolor sit amet<p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus et neque aliquet convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas orci sed arcu efficitur dapibus. Etiam a magna non orci fermentum volutpat.<p>
-							<p>Lisa</p>
-						</div>
-					</div>
-
-					<div class="simple-review">
-						<span class="review-rating"></span>
-						<div class="simple-review-text">
-							<p>Suspendisse vel massa nec magna accumsan consequat<p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus et neque aliquet convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas orci sed arcu efficitur dapibus. Etiam a magna non orci fermentum volutpat.<p>
-							<p>Andrew</p>
-						</div>
-					</div>
-
-					<div class="simple-review">
-						<span class="review-rating"></span>
-						<div class="simple-review-text">
-							<p>Lorem ipsum dolor sit amet<p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus et neque aliquet convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas orci sed arcu efficitur dapibus. Etiam a magna non orci fermentum volutpat.<p>
-							<p>Lisa</p>
-						</div>
-					</div>
-
-					<div class="simple-review">
-						<span class="review-rating"></span>
-						<div class="simple-review-text">
-							<p>Aliquam varius turpis a ullamcorper feugiat.<p>
-							<p>Pellentesque molestie nec turpis vel fermentum. Pellentesque in fringilla quam, a faucibus dolor. <p>
-							<p>Melisa</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end customer-says section -->
-
-
-
-
-	<!-- start faq section -->
-	<section class="faq-section">
-		<h3>FAQ's</h3>
-
-		<div class="container">
-			<div class="row">
-				
-				<div class="faqs-list">
-					
-					<div class="faq-element">
-						<span class="faq-element-title">Will I be locked into a contract?</span>
-						<p class="faq-element-text">No, you can cancel your recurring cleanings at any time. Just make sure you do so 24 hours prior to your next scheduled
-						appointment to stop your next service. It’s that simple.</p>
-					</div>
-					
-					<div class="faq-element">
-						<span class="faq-element-title">Can I skip or reschedule an appointment?</span>
-						<p class="faq-element-text">Absolutely. Just make sure you do so one day before your scheduled appointment. We will then work with you to resume
-						your scheduled seamless periodic cleaning experience.</p>
-					</div>
-					
-					<div class="faq-element">
-						<span class="faq-element-title">Can I modify my service ad-hoc or make special requests?</span>
-						<p class="faq-element-text">Yes, just call or email your local office with your request and we will be happy to accommodate.</p>
-					</div>
-					
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- end faq section -->
-
-
-
-	<footer>
-		<div class="container">
-			<div class="row">
-
-				<div class="footer-media">
-					<div class="footer-navigation">
-						<ul>
-							<li><a href="" class="footer-nav-link">Home</a></li>
-							<li><a href="" class="footer-nav-link">Services</a></li>
-							<li><a href="" class="footer-nav-link">EcoPure Advantage</a></li>
-							<li><a href="" class="footer-nav-link">About Us</a></li>
-							<li><a href="" class="footer-nav-link">Contact Us</a></li>
-						</ul>
-					</div>
-					<div class="footer-social-links">
-						<ul>
-							<li>
-								<a href="" class="social-link">
-									<svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 9 19"><g><g><path fill="#f6f6f6" d="M8.993-.011H5.226c-3.112 0-2.976 3.244-2.976 3.36v2.492H-.01v2.91h2.253V18.99h3.743L5.978 8.75h2.508l.49-2.925-2.99.032-.008-1.916s.008-1.002 1.172-1.018c.737-.01 1.827.008 1.827.008z"/></g></g></svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="social-link">
-									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"><g><g><path fill="#f6f6f6" d="M2.06.001c1.139 0 2.061.95 2.061 2.12 0 1.17-.922 2.12-2.06 2.12-1.139 0-2.062-.95-2.062-2.12C0 .951.922.001 2.06.001zM.245 5.577h3.999V17.99h-4zm10.7-.075v1.842c.38-.594 1.121-2.045 3.574-2.07 4.49 0 4.469 5.022 4.469 6.195l-.049 6.509-3.974-.012s.014-5.988.006-6.872c.018-.282-.016-2.312-1.846-2.312-2.473 0-2.184 2.548-2.184 2.548v6.61H6.893V5.502zm4.02 5.6c.002-.16.004-.148.006-.008-.003.039-.006.045-.006.008z"/></g></g></svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="social-link">
-									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24"><g><g><path fill="#f6f6f6" d="M1.204 11.14c.192.003.363.066 4.174 1.663.003 0 1.114.46 1.114.46.402.153.647.58.622 1.059-.026.47-.29.837-.684.938-.006.004-1.583.513-1.583.513-3.546 1.16-3.664 1.193-3.852 1.183-.295-.01-.553-.187-.706-.484-.111-.215-.188-.574-.235-1.004-.133-1.308.03-3.275.413-3.9.18-.289.443-.439.737-.428zm7.118 12.862c-.948.164-3.918-.946-4.536-1.694a.926.926 0 0 1-.216-.49.762.762 0 0 1 .042-.349c.065-.189.175-.336 2.847-3.522.003 0 .78-.938.78-.938.265-.338.739-.445 1.18-.273.428.17.688.542.663.951l-.01 1.691c-.01 3.786-.017 3.912-.079 4.093-.103.282-.341.47-.671.531zm6.693-1.85c-.31.128-.608.097-.842-.09-.152-.12-.312-.366-2.416-3.839l-.627-1.034c-.239-.372-.192-.86.106-1.232.29-.363.72-.5 1.095-.352.02.01 1.575.532 1.575.532 3.544 1.182 3.66 1.227 3.81 1.342.229.186.333.477.286.815-.137.971-2.092 3.496-2.987 3.859zm-3.03-8.618a.573.573 0 0 0 .02-.034c-.402.113-.842-.084-1.101-.487-.25-.39-.248-.846.01-1.163.01-.012.986-1.362.986-1.362 2.156-2.997 2.271-3.152 2.427-3.256.25-.17.553-.18.855-.033.853.424 2.588 3.039 2.691 4.043.002.013 0 .023 0 .034.021.342-.101.621-.345.787-.16.106-.314.16-4.343 1.15-.647.156-1.002.244-1.2.321zM8.43 11.461c-.192.06-.778.244-1.499-.941 0 0-4.87-7.785-4.985-8.026-.07-.269.017-.575.25-.823.73-.764 4.66-1.883 5.687-1.624.336.087.568.303.65.606.058.335.537 7.559.606 9.18.067 1.384-.517 1.567-.709 1.628z"/></g></g></svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="social-link">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="18" viewBox="0 0 24 18"><g><g><image width="24" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAE5ElEQVQ4T43VfUwTZxgA8Od611J7VyhQmYqyOaGg1CISQdBlKm5TUKky5gdUgUhUcB8kjo1kyboQMkw2psaPmQ11KE4TBAIRsplBrV9QVlYKw9BWAfkotRzYQj+gvXa5zjKsmfH+uMt77/M+v/fufd475NSpU37nz569RI6RDEF4xKi89f6n4HNsSFpfon2kE8wP5usjopcXP+7VlBvHxoIEkYIb8/kLBnt7e4rNJnMsiqFugiAecAN5P8hkslY6DUKf1icmdXUolUIuQcDmrVtEVVVVXV6j6GjRol+rLw+PGgyQJhbXV9fWiBfy57sQhAEElwCTyQQWiwVwHAeKogBBELDZbHDo8KGs70+cqPIAeXl5a2qrqxUuygWimJjvZHfkn3uBvR/uzm9sunkGYzIha++eqJPnzvW+GbrYgqIox2q1esIiIsK/9ce5eiNJxvUN9B9goqgHPfLJx0s9AH3ECoWah72aiKjIyGFVd9di7/13EpN+U7Qr3hcKVxqVqr9CMjIyUKVCYbLb7DiNHsjNWVtSUtLmjc/as0/a1NT4NY1vSt5cMQtIMjMLblRXnyY4OOTlH0ksLS1tLSoq4t64fn18RK/HtqSknKytq/ssIyMjQKloHx4zGvG41XE3W+7Kt/muWeSycCNJknx+cFD/LCCVSjmVFRfH9aN6v8TEtT82y+VH8g8e3F119do1lh8LcnOyVx0vL+/cl5oa2N7zcHDUYMA3bnhXWt/Y+I0vkBSf0KzT6TYSBGGeBeigLcnv/dQiazm4JCzMqOt7HLIjZdvpxqbGAtFK0aMOtSqcjhGLxby/O9VDhqdP8bUJ8ed+b27O9wViV4oejoyMRBEE1/gCUFhQGH3l6i/dDAYDUlJTtms12uIHbW1Jadt3SGvq6zwz9QJm8yQewAswaB7pFswFio8dS/i54kLrzMwMrFixQv4CQAfGr47r0Gg0saGhoRar1erndDqxzAP7l5aVlfXT/dliMe9ep3rI4XDgdJKQkJBbUcLoL/h8vmFoYChGp+29OE6Sb5ATEyDJykx/CciWSCQ1NbWVAf7+MDk5CQKBoFXRoUz0ztILOJ1O3OVywfj4OPB4POBwOJ49QZe6zW6D+IT4hj9ksh0vAXQiYdTyAZIkw+gNk75r5+GKysrzvsCUxYKHLgptYbGYMzqd7gOX2wUsJguYTOYUi8W8oO3r83wRPIDb7UYQBHHP1v66dbe61V2bCYKAgv0S3pfHj5t8AZIk8VWimLLmu/Li3bt2rSGNE2EYhtmYBFvR0NAw5o2fBT7amX6mTaFYQhA4SlHU1uHhQRBECeo7VF1pcxcxO1vMu3dbPTTx7BkevmzZldY/2yW+VTS3PfuKEuJTtW2Km+FsFgEOhxuIgLctR49Jo0u/Sh+YOyA5uSD4/p3LY7YZM7wVJmrpf6Le9FrA0dzcRU23VduCeEH+Lmpap1Tdqfu/gTk5hWk4G2NNmcyqS1fPa18JuLshHTBgO6cDnzyzBlsQNwtjs53TOOdJMFD2hUABUBTbkwMNtANYUQq4ST2A+7vAOBgIDHUY3UeZ2QAM1xyLAmDMsyPOTrYb3HZA5wGAH73iAEDHTQNQM9jzMng+zo0AynL826AAAKOvGFBOBOC/Gnke7AQE4QDiUAf2IODkv5jpVQ/9un30v2Ge8R/76iK0RtSATAAAAABJRU5ErkJggg=="/></g></g></svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="footer-info">
-			<div class="container">
-				<div class="row">
-
-					<div class="info-wrapper">
-						<div class="info-links">
-							<a href="" class="info-link">Terms</a>
-							<a href="" class="info-link">Privacy</a>
-						</div>
-	
-						<p class="copyright">© EcoPure Cleaning Service, Inc. All rights reserved.</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-	
-
-	<script src="js/scripts.min.js"></script>
+<!--HEADER-->
+<header>
+    <div class="top_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col_left">
+                    <a href="#">
+                        <img src="img/main_logo.png">
+                    </a>
+                </div>
+                <div class="col-6 col_center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#how">How it Works</a>
+                            </li>
+                            <li>
+                                <a href="#advantages">EcoPure Advantage</a>
+                            </li>
+                            <li>
+                                <a href="#">Franchising</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3 col_right">
+                    <a href="#" class="green_radius_btn">Book Now</a>
+                    <a href="#" class="user_header"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue_header">
+        <div class="container">
+            <a href="#" class="header_address">Hoboken, NJ</a>
+            <a href="tel:2015555555" class="header_tel">
+                <img src="img/icons/header_phone.svg">
+                (201) 555-5555</a>
+        </div>
+    </div>
+</header>
+<!--/HEADER-->
+
+<!--Mobile header-->
+<header class="mobile_header">
+    <div class="top_menu_mobile">
+        <div class="container">
+            <button class="hamburger hamburger--elastic d-lg-none" type="button"
+                    aria-label="Menu" aria-controls="navigation">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+            </button>
+            <a href="#" class="header_logo_mobile"><img src="img/main_logo.png" class="img-fluid"></a>
+            <a href="#" class="user_header_mobile"><img src="img/icons/header_user.svg" class="img-fluid"></a>
+        </div>
+    </div>
+    <div class="left_show_menu">
+        <div class="white_content">
+            <i class="fa fa-arrow-right left_menu_hide" aria-hidden="true"></i>
+            <a href="#" class="green_radius_btn">Book Now</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#how" class="active">How it Works</a>
+                    </li>
+                    <li>
+                        <a href="#advantages">EcoPure Advantage</a>
+                    </li>
+                    <li>
+                        <a href="#"> Franchising</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>
+<!--/Mobile header-->
+
+<!--MAIN SCREEN-->
+<div class="main_screen">
+    <div class="container">
+        <div class="text_center">
+            <h1>Genuinely Healthy, Immaculate Home</h1>
+            <h4>Premium quality home cleaning as low as $80</h4>
+            <a href="#" class="green_btn_border">Get Started</a>
+        </div>
+        <!--<img src="img/icons/main_screen_down_arrow_white.svg" class="arrow">-->
+        <a href="#why" class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+    </div>
+</div>
+<!--/MAIN SCREEN-->
+
+<!--WHY-->
+<div id="why" class="why">
+    <div class="container">
+        <h2>Why EcoPure</h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="why_item">
+                    <img src="img/why1.jpg" class="img-fluid">
+                    <div class="desc">
+                        <h5>No shortcuts on the cleaning</h5>
+                        <p>Training and testing our team is our religion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="why_item">
+                    <img src="img/why2.jpg" class="img-fluid">
+                    <div class="desc">
+                        <h5>Wet Dust Can’t Fly</h5>
+                        <p>Our water-based technology kills dust mites</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="why_item">
+                    <img src="img/why3.jpg" class="img-fluid">
+                    <div class="desc">
+                        <h5>The most 5-star reviews</h5>
+                        <p>Our quality and sophistication wows regularly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="why_item">
+                    <img src="img/why4.jpg" class="img-fluid">
+                    <div class="desc">
+                        <h5>Green and affordable</h5>
+                        <p>Expert-performed cleanliness from $80 per clean</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/WHY-->
+
+<!--HOW IT WORKS-->
+<div id="how" class="how_it_works">
+    <div class="col_left"></div>
+    <div class="col_center">
+        <div class="blue_circle">
+            <p>Live a <br>Cleaner, <br> Healthier <br> Life</p>
+        </div>
+        <h2>How it works</h2>
+        <ul>
+            <li>Fill out Book Online form</li>
+            <li>Get on a Welcome Call with our manager</li>
+            <li>Return happy to immaculate home, every time</li>
+        </ul>
+        <a href="#" class="transparent_btn_border">Learn more</a>
+    </div>
+    <div class="col_right"></div>
+</div>
+<!--/HOW IT WORKS-->
+
+<!--LIVE IT-->
+<div class="live_it">
+    <div class="container">
+        <h2>Live it. Love it. Tag it #ecopurehomepics</h2>
+        <div class="row mobile_slider_photo">
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it1.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it2.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it3.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it4.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it5.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it6.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it7.jpg" class="img-fluid"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#"><img src="img/live_it8.jpg" class="img-fluid"></a>
+            </div>
+        </div>
+        <p>Our live instagram feed @ecopurehome</p>
+    </div>
+</div>
+<!--/LIVE IT-->
+
+<!--ADVANTAGES-->
+<div class="advantages_wrap">
+    <div id="advantages" class="advantages">
+        <div class="col_left">
+            <div class="advantages_desc_wrap">
+                <h2>EcoPure Advantage</h2>
+                <p>EcoPure Cleaning Method is different. We use no air polluting brooms, vacuum cleaners or dusters. We use
+                    the
+                    state-of-the-art Rainbow Cleaning System that is better for your health, your carpet, furniture, and the
+                    environment.</p>
+                <a href="#" class="green_radius_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="col_right">
+            <ul>
+                <li><img src="img/certificate1.png"></li>
+                <li><img src="img/certificate2.png"></li>
+                <li><img src="img/certificate3.png"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--/ADVANTAGES-->
+
+<!--CUSTOMERS-->
+<div class="customers">
+    <div class="container">
+        <h2>Our customers says:</h2>
+        <div class="row mobile_slider_customers">
+            <div class="col-xl-3 col-sm-6">
+                <div class="customer_item">
+                    <div class="stars"><img src="img/icons/stars.svg"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tellus et neque aliquet
+                        convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas. Sed egestas orci sed arcu efficitur dapibus. Etiam a magna non orci fermentum
+                        volutpat.</p>
+                    <span>Lisa</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="customer_item">
+                    <div class="stars"><img src="img/icons/stars.svg"></div>
+                    <h3>Suspendisse vel massa nec magna accumsan consequat</h3>
+                    <p>Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas. Nam tempus tincidunt dignissim. Sed ut
+                        lorem elit. Etiam finibus sollicitudin mauris sit amet viverra. Nam </p>
+                    <span>Andrew</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="customer_item">
+                    <div class="stars"><img src="img/icons/stars.svg"></div>
+                    <h3>Pellentesque habitant</h3>
+                    <p>Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <span>Michael</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="customer_item">
+                    <div class="stars"><img src="img/icons/stars.svg"></div>
+                    <h3>Aliquam varius turpis a ullamcorper feugiat.</h3>
+                    <p>Pellentesque molestie nec turpis vel fermentum. Pellentesque in fringilla quam, a faucibus
+                        dolor. </p>
+                    <span>Melisa</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--CUSTOMERS-->
+
+<!--FAQ-->
+<div class="faq">
+    <div class="container">
+        <h2>FAQ's</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="faq_item">
+                    <h3>Will I be locked into a contract?</h3>
+                    <p>No, you can cancel your recurring cleanings at any time. Just make sure you do so 24 hours prior to your
+                        next scheduled appointment to stop your next service. It’s that simple.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="faq_item">
+                    <h3>Can I skip or reschedule an appointment?</h3>
+                    <p>Absolutely. Just make sure you do so one day before your scheduled appointment. We will then work with
+                        you to resume your scheduled seamless periodic cleaning experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="faq_item">
+                    <h3>Can I modify my service ad-hoc or make special requests?</h3>
+                    <p>Yes, just call or email your local office with your request and we will be happy to accommodate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/FAQ-->
+
+<!--FOOTER-->
+<footer>
+    <div class="top_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col_left">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a><span>|</span></li>
+                            <li><a href="#">Services</a><span>|</span></li>
+                            <li><a href="#">EcoPure Advantage</a><span>|</span></li>
+                            <li><a href="#">About Us</a><span>|</span></li>
+                            <li><a href="#">Contact Us</a><span>|</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-5 col_right">
+                    <div class="footer_social">
+                        <a href="#"><img src="img/icons/facebook.svg"></a>
+                        <a href="#"><img src="img/icons/linkedin.svg"></a>
+                        <a href="#"><img src="img/icons/yelp.svg"></a>
+                        <a href="#"><img src="img/icons/ur.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col_left">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="col-md-6 col_copy">
+                    ©  EcoPure Cleaning Service, Inc. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/FOOTER-->
+
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
