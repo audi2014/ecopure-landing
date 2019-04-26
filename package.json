@@ -7,7 +7,7 @@
     "test": "true"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.4",
     "del": "^4.1.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -30,6 +30,6 @@
     "url": "https://github.com/onevoone/ecopure-landing/issues"
   },
   "dependencies": {
-    "mmenu-light": "^1.0.3"
+    "gulp-twig": "^1.2.0"
   }
 }

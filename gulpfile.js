@@ -1,13 +1,14 @@
-var gulp          = require('gulp'), // Подключаем Gulp
-	sass          = require('gulp-sass'),	// Подключаем Sass пакет
-	browserSync   = require('browser-sync'), // Подключаем Browser Sync
-	concat        = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
-	uglify        = require('gulp-uglify'), // Подключаем gulp-uglifyjs (для сжатия JS)
-	cleancss      = require('gulp-clean-css'), // Подключаем пакет для минификации CSS
-	rename        = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
-	autoprefixer  = require('gulp-autoprefixer'), // Подключаем библиотеку для автоматического добавления префиксов
-	notify        = require('gulp-notify'),	// Подключаем библиотеку для опопвещения об ошибках в .scss файлах
-	del           = require('del'); // Подключаем библиотеку для удаления файлов и папок
+var gulp			= require('gulp'), // Подключаем Gulp
+	sass			= require('gulp-sass'),	// Подключаем Sass пакет
+	browserSync		= require('browser-sync'), // Подключаем Browser Sync
+	concat			= require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+	uglify			= require('gulp-uglify'), // Подключаем gulp-uglifyjs (для сжатия JS)
+	cleancss		= require('gulp-clean-css'), // Подключаем пакет для минификации CSS
+	rename			= require('gulp-rename'), // Подключаем библиотеку для переименования файлов
+	autoprefixer	= require('gulp-autoprefixer'), // Подключаем библиотеку для автоматического добавления префиксов
+	notify			= require('gulp-notify'),	// Подключаем библиотеку для опопвещения об ошибках в .scss файлах
+	del				= require('del'); // Подключаем библиотеку для удаления файлов и папок
+	twig			= require('gulp-twig');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -49,13 +50,27 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('code', function() {
-	return gulp.src('app/*.html')
+	return gulp.src('app/**/*.html')
 	.pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('clean', async function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
+
+
+
+//	GULP TWIG
+gulp.task('compile', function () {
+	var data = require('./app/twig/data/index.twig.json');
+
+	return gulp.src('app/twig/**/*.twig')
+		.pipe(twig({ data }))
+		.pipe(gulp.dest('app/twig/compiled'))
+		.pipe(browserSync.reload({ stream: true }))
+});
+
+
 
 
 /**
@@ -99,5 +114,5 @@ gulp.task('watch', function() {
 	gulp.watch('app/*.html', gulp.parallel('code'))
 });
 
-gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('compile', 'styles', 'scripts', 'browser-sync', 'watch'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'styles', 'scripts'));
