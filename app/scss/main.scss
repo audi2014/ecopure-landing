@@ -141,21 +141,63 @@ header.mobile_header {
     list-style: none;
 
     li {
+      position: relative;
       margin-right: 80px;
 
       &:last-of-type {
         margin-right: 0;
       }
 
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+
+      .sub-menu {
+        z-index: 111;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        height: inherit;
+        width: max-content;
+        margin-top: 25px;
+        background-color: rgba(226, 227, 231, 0.9);
+
+        li {
+          margin-right: 0;
+          display: flex;
+          border-left: 2px solid transparent;
+          
+          &:hover {
+            border-color: #009dde;
+            a {
+              color: #009dde;
+            }
+          }
+        }
+
+        a {
+            padding: 12px 18px 12px 18px;
+            color: #898989;
+            border-bottom: none;
+        }
+
+        &:hover {
+          display: block;
+        }
+      }
     }
 
-    a {
+    a, span {
       font-size: 18px;
       font-weight: 400;
       color: #333;
       text-decoration: none !important;
       transition: $trans;
       border-bottom: 2px solid transparent;
+      cursor: pointer;
 
       &:hover {
         color: $green_hover;
@@ -364,7 +406,11 @@ header.mobile_header {
 
   &.scroll {
 
-    a {
+    .bottom-sub-menu {
+      margin-top: 34px;
+    }
+
+    nav > ul > li > a, nav > ul > li > span {
       height: 34px;
     }
   }
@@ -382,6 +428,14 @@ header.mobile_header {
   }
 
   li {
+    position: relative;
+
+    &:hover {
+
+      .bottom-sub-menu {
+        display: block;
+      }
+    }
 
     &:first-of-type {
 
@@ -397,7 +451,44 @@ header.mobile_header {
       }
     }
 
-    a {
+    .bottom-sub-menu {
+      z-index: 111;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      height: inherit;
+      width: max-content;
+      margin-top: 54px;
+      background-color: rgba(226, 227, 231, 0.9);
+
+      li {
+        margin-right: 0;
+        display: flex;
+        border-left: 2px solid transparent;
+        
+        &:hover, &.active {
+          border-color: #009dde;
+
+          a {
+            color: #009dde;
+            border-bottom: none;
+          }
+        }
+      }
+
+      a, span {
+          padding: 12px 18px 12px 18px;
+          color: #898989;
+          border-bottom: none;
+      }
+
+      &:hover {
+        display: block;
+      }
+    }
+
+    a, span {
       position: relative;
       display: flex;
       align-items: center;
@@ -411,6 +502,7 @@ header.mobile_header {
       text-decoration: none;
       border-bottom: 2px solid transparent;
       transition: $trans;
+      cursor: pointer;
 
       &:after {
         position: absolute;
@@ -1112,6 +1204,8 @@ nav {
     h5 {
       font-size: 26px;
       color: #99cc33;
+      max-width: 160px;
+      margin: 0 auto;
     }
   }
 }

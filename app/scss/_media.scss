@@ -211,6 +211,7 @@ $green_hover: #8DC63F;
       padding-left: 18px;
       padding-right: 18px;
       background-color: #fff;
+      overflow-y: auto;
 
       .left_menu_hide {
         transform: rotate(180deg);
@@ -284,13 +285,36 @@ $green_hover: #8DC63F;
     }
 
     .bottom_mobile_nav {
-      margin-top: 30px;
+      margin: 30px 0;
 
       li {
+        position: relative;
         margin-bottom: 6px;
+
+        .bottom-sub-menu-mobile {
+          display: block;
+          max-height: 0;
+          width: 100%;
+          overflow: hidden;
+          transition: $trans;
+        }
+
+        &:hover, &:active {
+          span i {
+            transform: rotateX(180deg);
+          }
+
+          .bottom-sub-menu-mobile {
+            display: block;
+            margin: 10px 0;
+            max-height: 100vh;
+            transition: $trans;
+          }
+        }
+        
       }
 
-      a {
+      a, span {
         font-size: 16px;
         border-bottom: 1px solid $green_hover;
         text-decoration: none !important;
@@ -326,16 +350,47 @@ $green_hover: #8DC63F;
       li {
         margin-bottom: 10px;
         text-align: center;
+
+        .sub-menu-mobile {
+          display: block;
+          max-height: 0;
+          width: 100%;
+          overflow: hidden;
+          transition: $trans;
+        }
+
+        &:hover, &:active {
+          span i {
+            transform: rotateX(180deg);
+          }
+
+          .sub-menu-mobile {
+            display: block;
+            margin: 10px 0;
+            max-height: 100vh;
+            transition: $trans;
+          }
+        }
       }
 
-      a {
+      a, span {
         font-size: 18px;
         font-weight: 400;
         color: #333;
         transition: $trans;
+        cursor: pointer;
 
         &:hover {
           color: $green_hover;
+        }
+      }
+
+      span {
+        position: relative;
+        i {
+          position: absolute;
+          top: 3px;
+          right: -20px;
         }
       }
     }
