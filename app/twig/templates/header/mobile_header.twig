@@ -1,0 +1,37 @@
+{# layout.twig #}
+
+<header class="mobile_header">
+    <div class="top_menu_mobile">
+        <div class="container">
+            <button aria-controls="navigation" aria-label="Menu" class="hamburger hamburger--elastic d-lg-none" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <a class="header_logo_mobile" href="{{ site.url }}"><img class="img-fluid" src="{{ site.assets }}/img/main_logo.png"></a>
+            <a class="user_header_mobile" href="#"><img class="img-fluid" src="{{ site.assets }}/img/icons/header_user.svg"></a>
+        </div>
+    </div>
+    <div class="left_show_menu">
+        <div class="white_content">
+            <i aria-hidden="true" class="fa fa-arrow-right left_menu_hide"></i>
+            <a class="green_radius_btn" href="{{ site.url.book_now }}">Book Now</a>
+            
+			{% include "../../blocks/header/top_nav_mobile.twig" %}
+
+			{% if location.location_page %}
+				<form action="#">
+					<label>Change location:</label>
+					<input placeholder="Postal / Zip Code" type="text">
+					<input type="submit" value="Go!">
+				</form>
+			{% endif %}
+
+            
+			{% if location.location_page %}
+				{% include "../../blocks/header/bottom_header_mobile.twig" %}
+			{% endif %}
+
+        </div>
+    </div>
+</header>

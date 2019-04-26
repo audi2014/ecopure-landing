@@ -1,0 +1,139 @@
+{# how_it_works.twig #}
+
+      
+<!--HOW IT WORKS PAGE-->
+<div class="how_it_works_page">
+	<div class="container">
+		<h2>{{ content.how_it_works_page.head }}</h2>
+
+		<div class="row no-gutters">
+			<div class="col-lg-5">
+				<div class="left_item">
+					<img class="img-fluid" src="{{ content.how_it_works_page.steps.step_1.img }}">
+				</div>
+			</div>
+			<div class="col-lg-2 col_center">
+				<div class="step_wrap green_wrap">
+					<span>step</span>
+					<div class="step_circle">1</div>
+					<div class="dashed_bottom"></div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="right_item">
+					<div class="desc_wrap">
+						<h4>{{ content.how_it_works_page.steps.step_1.title }}</h4>
+						<p>{{ content.how_it_works_page.steps.step_1.text }}</p>
+						<a class="green_radius_btn" href="{{ content.how_it_works_page.steps.step_1.link.path }}">
+							{{ content.how_it_works_page.steps.step_1.link.title }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-lg-5 order-lg-3">
+				<div class="right_item">
+					<img class="img-fluid" src="{{ content.how_it_works_page.steps.step_2.img }}">
+				</div>
+			</div>
+			<div class="col-lg-2 order-lg-2 col_center">
+				<div class="step_wrap green_wrap">
+					<span>step</span>
+					<div class="step_circle">2</div>
+					<div class="dashed_bottom"></div>
+				</div>
+			</div>
+			<div class="col-lg-5 order-lg-1">
+				<div class="left_item">
+					<div class="desc_wrap">
+						<h4>{{ content.how_it_works_page.steps.step_2.title }}</h4>
+						<p>{{ content.how_it_works_page.steps.step_2.text }}</p>
+						<a class="green_radius_btn" href="{{ content.how_it_works_page.steps.step_2.link.path }}">
+							{{ content.how_it_works_page.steps.step_2.link.title }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-lg-5">
+				<div class="left_item">
+					<img class="img-fluid" src="{{ content.how_it_works_page.steps.step_3.img }}">
+				</div>
+			</div>
+			<div class="col-lg-2 col_center">
+				<div class="step_wrap green_wrap">
+					<span>step</span>
+					<div class="step_circle">3</div>
+					<div class="dashed_bottom"></div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="right_item">
+					<div class="desc_wrap">
+						<h4>{{ content.how_it_works_page.steps.step_3.title }}</h4>
+						<p>{{ content.how_it_works_page.steps.step_3.text }}</p>
+						<a class="green_radius_btn" href="{{ content.how_it_works_page.steps.step_3.link.path }}">
+							{{ content.how_it_works_page.steps.step_3.link.title }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row no-gutters">
+			<div class="col-lg-5 order-lg-3">
+				<div class="right_item">
+					<img class="img-fluid" src="{{ content.how_it_works_page.steps.step_4.img }}">
+				</div>
+			</div>
+			<div class="col-lg-2 order-lg-2 col_center">
+				<div class="step_wrap green_wrap">
+					<span>step</span>
+					<div class="step_circle">4</div>
+				</div>
+			</div>
+			<div class="col-lg-5 order-lg-1">
+				<div class="left_item">
+					<div class="desc_wrap">
+						<h4>{{ content.how_it_works_page.steps.step_4.title }}</h4>
+						<p>{{ content.how_it_works_page.steps.step_4.text }}</p>
+						<a class="green_radius_btn" href="{{ content.how_it_works_page.steps.step_4.link.path }}">
+							{{ content.how_it_works_page.steps.step_4.link.title }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--HOW IT WORKS-->
+
+<!--BENEFITS-->
+<div class="benefits">
+	<div class="container">
+		<h2>{{ benefits.head }}</h2>
+		<div class="benefits_wrap">
+			<div class="row">
+
+				{% for item in content.benefits.benefits_list %}
+					<div class="col-lg-4 col-sm-6">
+						<div class="img_wrap">
+							<img src="{{ item.img }}">
+						</div>
+						<h4>{{ item.title }}</h4>
+						<p>{{ item.text }}</p>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--BENEFITS-->
+

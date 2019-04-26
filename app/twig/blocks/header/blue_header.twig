@@ -1,0 +1,56 @@
+
+{% set dropdown_item %}
+	<div class="dropdown_item">
+		We're hiring
+	</div>
+{% endset %}
+
+
+{% set blue_header_preview %}
+	<a class="header_address" href="#">{{ location.address }}</a>
+	<a class="header_tel" href="tel:{{ location.tel }}">
+		<img src="{{ site.assets }}/img/icons/header_phone.svg">
+		{{ location.tel }}</a>
+{% endset %}
+
+
+{% set blue_header_full %}
+	<div class="row">
+		<div class="col-6 col_left">
+			<a class="header_address" href="#">{{ location.address }}</a>
+			<a class="header_tel" href="tel:{{ location.tel }}">
+				<img src="{{ site.assets }}/img/icons/header_phone.svg">
+				{{ location.tel }}</a>
+		</div>
+		<div class="col-6 col_right">
+			<form action="#">
+				<label>Change location:</label>
+				<input placeholder="Postal / Zip Code" type="text">
+				<input type="submit" value="Go!">
+			</form>
+		</div>
+	</div>
+{% endset %}
+
+
+
+<div class="blue_header">
+    <div class="container">
+
+    {% if location.isSessionActive and location.isBookingComplete %}
+        {{ blue_header_preview }}
+
+    {% else %}
+        {{ blue_header_full }}
+
+    {% endif %}
+
+
+	{% if location.location_page %}
+		{{ dropdown_item }}
+	{% endif %}
+
+    </div>
+</div>
+
+

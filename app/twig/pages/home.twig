@@ -1,0 +1,147 @@
+{# home.twig #}
+
+<!--MAIN SCREEN-->
+<div class="main_screen">
+	<div class="container">
+		<div class="text_center">
+			<h1>{{ content.home_main.first }}</h1>
+			<h4>{{ content.home_main.second }}</h4>
+			<a class="green_btn_border" href="{{ content.home_main.get_started_link }}">Get Started</a>
+		</div>
+		<!--<img src="img/icons/main_screen_down_arrow_white.svg" class="arrow">-->
+		<a class="arrow_down" href="#why">
+			<i aria-hidden="true" class="fa fa-angle-down"></i>
+		</a>
+
+	</div>
+</div>
+<!--/MAIN SCREEN-->
+
+<!--WHY-->
+<div class="why" id="why">
+	<div class="container">
+		<h2>{{ content.why.head }}</h2>
+		<div class="row">
+
+			{% for why_item in content.why.list %}
+				<div class="col-lg-3 col-sm-6">
+					<div class="why_item">
+						<img class="img-fluid" src="{{ why_item.img }}">
+						<div class="desc">
+							<h5>{{ why_item.head }}</h5>
+							<p>{{ why_item.text }}</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			
+		</div>
+	</div>
+</div>
+<!--/WHY-->
+
+<!--HOW IT WORKS-->
+<div class="how_it_works" id="how">
+	<div class="col_left"></div>
+	<div class="col_center">
+		<div class="blue_circle">
+			<p>Live a
+				<br>Cleaner,
+				<br>
+				Healthier
+				<br>
+				Life</p>
+		</div>
+		<h2>{{ content.how_it_works.head }}</h2>
+		<ul>
+			{% for item in content.how_it_works.list %}
+				<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
+		<a class="transparent_btn_border" href="{{ content.how_it_works.learn_more }}">Learn more</a>
+	</div>
+	<div class="col_right"></div>
+</div>
+<!--/HOW IT WORKS-->
+
+<!--LIVE IT-->
+<div class="live_it">
+	<div class="container">
+		<h2>{{ content.live_it.head }}</h2>
+		<div class="row mobile_slider_photo">
+
+			{% for item in content.live_it.photos %}
+				<div class="col-md-3 col-sm-6">
+					<a href="{{ item.externalRef }}"><img class="img-fluid" src="{{ item.img }}"></a>
+				</div>
+			{% endfor %}
+
+		</div>
+		<p>{{ content.live_it.footer }}</p>
+	</div>
+</div>
+<!--/LIVE IT-->
+
+<!--ADVANTAGES-->
+<div class="advantages_wrap">
+	<div class="advantages" id="advantages">
+		<div class="col_left">
+			<div class="advantages_desc_wrap">
+				<h2>{{ content.advantages.head }}</h2>
+				<p>{{ content.advantages.text }}</p>
+				<a class="green_radius_btn" href="{{ content.advantages.learn_more_link }}">Learn More</a>
+			</div>
+		</div>
+		<div class="col_right">
+			<ul>
+				{% for item in content.advantages.certificates %}
+					<li><img src="{{ item }}"></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--/ADVANTAGES-->
+
+<!--CUSTOMERS-->
+<div class="customers">
+	<div class="container">
+		<h2>{{ content.customers.head }}</h2>
+		<div class="row mobile_slider_customers">
+
+			{% for item in content.customers.customer_items %}
+				<div class="col-xl-3 col-sm-6">
+					<div class="customer_item">
+						<div class="stars"><img src="{{ item.img }}"></div>
+						<h3>{{ item.title }}</h3>
+						<p>{{ item.message }}</p>
+						<span>{{ item.author }}</span>
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
+<!--CUSTOMERS-->
+
+<!--FAQ-->
+<div class="faq">
+	<div class="container">
+		<h2>{{ content.faq.head }}</h2>
+		<div class="row">
+
+			{% for item in content.faq.faq_list %}
+				<div class="col-md-4">
+					<div class="faq_item">
+						<h3>{{ item.title }}</h3>
+						<p>{{ item.text }}</p>
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
+<!--/FAQ-->

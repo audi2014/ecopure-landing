@@ -1,0 +1,30 @@
+<div class="bottom_header">
+    <div class="container">
+        <nav>
+            <ul>
+				{% for link in navigation.local %}
+
+					{% if link.sub_nav %}
+						<li>
+							<span>
+								{{ link.title }}
+							</span>
+							<ul class="bottom-sub-menu">
+								{% for sub_link in link.sub_nav %}
+									<li>
+										<a href="{{ sub_link.path }}" class="{{ sub_link.isActive ? "active": "" }}">{{ sub_link.title }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% else %}
+						<li>
+							<a href="{{ link.path }}" class="{{ link.isActive ? "active": "" }}">{{ link.title }}</a>
+						</li>
+					{% endif %}
+
+				{% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

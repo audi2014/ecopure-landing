@@ -1,0 +1,569 @@
+{
+	"title": "Gulp and Twig",
+	"benefits": [
+		"",
+		"Gulp and Twig",
+		"Secure"
+	],
+	"location": {
+		"address": "Hoboken, NJ",
+		"tel": "(201) 555-5555",
+		"isNewUser": true,
+		"isSessionActive": false,
+		"isBookingComplete": false,
+		"location_page": false
+	},
+	"navigation": {
+		"global": [
+			{
+				"path": "#how",
+				"title": "How it Works",
+				"isActive": true
+			},
+			{
+				"path": "#advantages",
+				"title": "EcoPure Advantage",
+				"isActive": false,
+				"sub_nav": [
+					{
+						"path": "#",
+						"title": "Why EcoPure Home?",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Technology",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "EcoPure vs. Traditional Cleaning",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Aromatherapy",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Gallery",
+						"isActive": false
+					}
+				]
+			},
+			{
+				"path": "#",
+				"title": "Franchising",
+				"isActive": false
+			}
+		],
+		"local": [
+			{
+				"path": "#",
+				"title": "About",
+				"isActive": false
+			},
+			{
+				"path": "#",
+				"title": "Services",
+				"isActive": false,
+				"sub_nav": [
+					{
+						"path": "#",
+						"title": "Apartment Cleaning",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "House Cleaning",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Move-Out Cleaning",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Carpet Cleaning",
+						"isActive": false
+					},
+					{
+						"path": "#",
+						"title": "Commercial & Office Cleaning",
+						"isActive": false
+					}
+				]
+			},
+			{
+				"path": "#",
+				"title": "Rates",
+				"isActive": false
+			},
+			{
+				"path": "#",
+				"title": "Areas We Serve",
+				"isActive": false
+			}
+		],
+		"footer": [
+			{
+				"path": "#",
+				"title": "Home"
+			},
+			{
+				"path": "#",
+				"title": "Services"
+			},
+			{
+				"path": "#",
+				"title": "EcoPure Advantage"
+			},
+			{
+				"path": "#",
+				"title": "About Us"
+			},
+			{
+				"path": "#",
+				"title": "Contact Us"
+			}
+		]
+	},
+	"footer": {
+		"copyright": "©  EcoPure Cleaning Service, Inc. All rights reserved.",
+		"docs": {
+			"privacy": {
+				"title": "Privacy",
+				"link": "#"
+			},
+			"terms": {
+				"title": "Terms",
+				"link": "#"
+			}
+		},
+		"social": [
+			{
+				"externalPath": "#",
+				"icon": "../../img/icons/facebook.svg"
+			},
+			{
+				"externalPath": "#",
+				"icon": "../../img/icons/linkedin.svg"
+			},
+			{
+				"externalPath": "#",
+				"icon": "../../img/icons/yelp.svg"
+			},
+			{
+				"externalPath": "#",
+				"icon": "../../img/icons/ur.png"
+			}
+		]
+	},
+	"site": {
+		"url": {
+			"get_started": "",
+			"learn_more": ""
+		},
+		"assets": "../../"
+	},
+	"content": {
+		"home_main": {
+			"first": "Genuinely Healthy, Immaculate Home",
+			"second": "Premium quality home cleaning as low as $80",
+			"get_started_link": "#"
+		},
+		"why": {
+			"head": "Why EcoPure",
+			"list": [
+				{
+					"img": "../../img/why1.jpg",
+					"head": "No shortcuts on the cleaning",
+					"text": "Training and testing our team is our religion"
+				},
+				{
+					"img": "../../img/why2.jpg",
+					"head": "Wet Dust Can’t Fly",
+					"text": "Our water-based technology kills dust mites"
+				},
+				{
+					"img": "../../img/why3.jpg",
+					"head": "The most 5-star reviews",
+					"text": "Our quality and sophistication wows regularly"
+				},
+				{
+					"img": "../../img/why4.jpg",
+					"head": "Green and affordable",
+					"text": "Expert-performed cleanliness from $80 per clean"
+				}
+			]
+		},
+		"how_it_works": {
+			"head": "How it works",
+			"list": [
+				"Fill out Book Online form",
+				"Get on a Welcome Call with our manager",
+				"Return happy to immaculate home, every time"
+			],
+			"learn_more": "#"
+		},
+		"live_it": {
+			"head": "Live it. Love it. Tag it #ecopurehomepics",
+			"footer": "Our live instagram feed @ecopurehome",
+			"photos": [
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it1.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it2.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it3.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it4.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it5.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it6.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it7.jpg"
+				},
+				{
+					"externalRef": "#",
+					"img": "../../img/live_it8.jpg"
+				}
+			]
+		},
+		"advantages": {
+			"head": "EcoPure Advantage",
+			"text": "EcoPure Cleaning Method is different. We use no air polluting brooms, vacuum cleaners or dusters. We use the state-of-the-art Rainbow Cleaning System that is better for your health, your carpet, furniture, and the environment.",
+			"learn_more_link": "#",
+			"certificates": [
+				"../../img/certificate1.png",
+				"../../img/certificate2.png",
+				"../../img/certificate3.png"
+			]
+		},
+		"customers": {
+			"head": "Our customers says:",
+			"customer_items": [
+				{
+					"img": "../../img/icons/stars.svg",
+					"title": "Pellentesque habitant",
+					"message": "Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+					"author": "Michael"
+				},
+				{
+					"img": "../../img/icons/stars.svg",
+					"title": "Pellentesque habitant",
+					"message": "Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+					"author": "Michael"
+				},
+				{
+					"img": "../../img/icons/stars.svg",
+					"title": "Pellentesque habitant",
+					"message": "Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+					"author": "Michael"
+				},
+				{
+					"img": "../../img/icons/stars.svg",
+					"title": "Pellentesque habitant",
+					"message": "Suspendisse vel massa nec magna accumsan consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+					"author": "Michael"
+				}
+			]
+		},
+		"faq": {
+			"head": "FAQ's",
+			"faq_list": [
+				{
+					"title": "Will I be locked into a contract?",
+					"text": "No, you can cancel your recurring cleanings at any time. Just make sure you do so 24 hours prior to your next scheduled appointment to stop your next service. It’s that simple."
+				},
+				{
+					"title": "Can I skip or reschedule an appointment?",
+					"text": "Absolutely. Just make sure you do so one day before your scheduled appointment. We will then work with you to resume your scheduled seamless periodic cleaning experience."
+				},
+				{
+					"title": "Can I modify my service ad-hoc or make special requests?",
+					"text": "Yes, just call or email your local office with your request and we will be happy to accommodate."
+				}
+			]
+		},
+		"hiring_main": {
+			"head": "Hoboken’s Premier Home Cleaning Service",
+			"caption": "Live a cleaner, healthier life!",
+			"book_link": "#",
+			"pricing_link": "#"
+		},
+		"about": {
+			"head": "About",
+			"text_p1": "At EcoPure Home Cleaning of Hoboken, we understand that every home is unique, so we approach each potential client with meticulous attention to their particular needs. We leveraged our extensive experience to develop an effective model built on these core principles: People, Process, and Quality Control.",
+			"text_p2": "Living in Hoboken, you’re likely a busy professional with no time and desire to clean your own home. That is why finding a reliable and trustworthy maid service is essential to a more fulfilled living. Did you know that numerous studies suggest that a cleaner, healthier home environment has a direct impact on your health and overall quality of life? At last, Hoboken can now take advantage of EcoPure’s proven model that is second to none in providing our residents’ peace of mind and satisfaction that the homes are pampered the way they expect. Taking great pride in revolutionizing the residential cleaning concept by incorporating state-of-the-art technology with a process cultivated largely by customer feedback, we set new industry standards for excellence in quality and customer service.",
+			"plans": {
+				"title": "Recurring Plans",
+				"desc": "2nd Cleaning Discount",
+				"plan_1": "Weekly Plan - 50% off", 
+				"plan_2": "Bi-Weekly Plan - 25% off", 
+				"plan_3": "Monthly Plan - 15% off",
+				"caption": "**Subject to reversal if plans are cancelled within 90 days",
+				"redeem_link": "#" 
+			}
+		},
+		"love": {
+			"head": "We Love Babies and Pets",
+			"text": "Kids and pets fill our lives with meaning and joy. We understand how sensitive our clients can be to the needs of their loved ones. We will work with you tirelessly to make sure your kids and pets are as comfortable as possible. For example, we can be flexible to schedule your service not to disturb your kids’ knapp time or around the time your dog is being walked. Most of the times, however, dogs, cats and other animals are very comfortable and safe around us and the equipment we use."
+		},
+		"process": {
+			"head": "EcoPure Home Cleaning Process",
+			"process_list": [
+				{
+					"title": "Welcome Meeting",
+					"img": "../../img/process1.jpg"
+				},
+				{
+					"title": "Bathrooms & Kitchen",
+					"img": "../../img/process2.jpg"
+				},
+				{
+					"title": "Living Areas",
+					"img": "../../img/process3.jpg"
+				},
+				{
+					"title": "Presentation Aromatherapy",
+					"img": "../../img/process4.jpg"
+				},
+				{
+					"title": "Quality Control",
+					"img": "../../img/process5.jpg"
+				}
+			]
+		},
+		"methodology": {
+			"head": "Our Unique Cleaning Methodology",
+			"desc": "Unlike other cleaners, we use state-of-the-art technology and wash surfaces where safe & possible, instead of wiping them.",
+			"text": "Rainbow is our state-of-the art machine that uses water instead of bags and filters to trap dust, hair, debris, etc. To Rainbow means to use applicable attachments to eliminate dust, debris, hair, crumbs, and dandruff from every surface of your home. To find out why using dry vacuums is toxic and inefficient, click here.",
+			"methodology_items": {
+				"kitchen": {
+					"title": "Kitchen",
+					"img": "../../img/icons/methodology1_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"bathroom": {
+					"title": "Bathroom",
+					"img": "../../img/icons/methodology2_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"living_room": {
+					"title": "Living Room",
+					"img": "../../img/icons/methodology3_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"bedroom": {
+					"title": "Bedroom",
+					"img": "../../img/icons/methodology4_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"workingroom": {
+					"title": "Working Room",
+					"img": "../../img/icons/methodology5_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"babyroom": {
+					"title": "Baby Room",
+					"img": "../../img/icons/methodology6_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				},
+				"services": {
+					"title": "Add-On Services",
+					"img": "../../img/icons/methodology7_hover.png",
+					"desc_list": [
+						"Outside of cabinets washed",
+						"Stovetop washed & detailed",
+						"Outside of fridge washed & detailed",
+						"Countertops washed",
+						"Countertop accessories/appliances wiped",
+						"Microwave inside & outside washed & detailed",
+						"Sink washed & detailed",
+						"Faucet washed & detailed",
+						"Outside of dishwasher washed & detailed",
+						"Garbage can washed",
+						"Baseboards dusted/spot cleaned",
+						"Floor Rainbow/scrub/mop"
+					]
+				}
+			}
+		},
+		"flexible_plans": {
+			"head": "Flexible Plans",
+			"text": "Skip cleanings, request ad-hoc service, and cancel plans anytime. No commitments.",
+			"book_link": "#"
+		},
+		"how_it_works_page": {
+			"head": "How it Works",
+			"steps": {
+				"step_1": {
+					"img": "../../img/how_it_works1.jpg",
+					"title": "Find your local <br>EcoPure Location",
+					"text": "Your zip code determines which EcoPure Office will service your home. One thing is certain you will get the personal attention you and your family deserves.",
+					"link": {
+						"path": "#",
+						"title": "Get Started"
+					}
+				},
+				"step_2": {
+					"img": "../../img/how_it_works2.jpg",
+					"title": "Book your service",
+					"text": "Whether you live in a house or an apartment, or whether you require recurring or ad-hoc service, we have a flexible plan to match your lifestyle. Need to cancel, reschedule, or skip an appointment? Not a problem.",
+					"link": {
+						"path": "#",
+						"title": "Book Now"
+					}
+				},
+				"step_3": {
+					"img": "../../img/how_it_works3.jpg",
+					"title": "We clean your home",
+					"text": "Hand-picked cleaning experts that go through rigorous training and testing equipped with state-of-the-art technology will produce the results that you never thought possible. Should at any time you feel less than 100% satisfied, we’ll come back to correct.",
+					"link": {
+						"path": "#",
+						"title": "Get Started"
+					}
+				},
+				"step_4": {
+					"img": "../../img/how_it_works4.jpg",
+					"title": "Come home happy - <br>every time",
+					"text": "The old “honey, we should clean our home” conversation is about to be banished from you life. Welcome to a world where cleaning is always planned, simple, and most importantly done right by the experts.",
+					"link": {
+						"path": "#",
+						"title": "Book Now"
+					}
+				}
+			}
+		},
+		"benefits": {
+			"head": "Benefits",
+			"benefits_list": [
+				{
+					"img": "../../img/icons/benefits1.png",
+					"title": "Cleanliness",
+					"text": "Our unique cleaning methodology and staff are tested regularly to ensure your home cleaning results are as impecable to enjoy as they are easy to maintain."
+				},
+				{
+					"img": "../../img/icons/benefits2.png",
+					"title": "Simplicity",
+					"text": "From visiting our website to no-hassle bookings and service adjustments, we make your life easier every way we can."
+				},
+				{
+					"img": "../../img/icons/benefits3.png",
+					"title": "Flexibility",
+					"text": "We accommodate every household size, composition and schedule. Need to skip an appointment or cancel? No problem."
+				},
+				{
+					"img": "../../img/icons/benefits4.png",
+					"title": "Stress-free",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend dui a sem tincidunt mattis."
+				},
+				{
+					"img": "../../img/icons/benefits5.png",
+					"title": "Personal touch",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend dui a sem tincidunt mattis."
+				},
+				{
+					"img": "../../img/icons/benefits6.png",
+					"title": "Genuinely Healthy",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend dui a sem tincidunt mattis."
+				}
+			]
+		}
+	}
+}

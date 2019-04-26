@@ -1,0 +1,32 @@
+
+<!--HEADER-->
+<header>
+    <div class="top_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col_left">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.assets }}/img/main_logo.png">
+                    </a>
+                </div>
+                <div class="col-6 col_center">
+                
+                    {% include "../../blocks/header/top_nav.twig" %}
+                    
+                </div>
+                <div class="col-3 col_right">
+                    <a href="{{ site.url.book_now }}" class="green_radius_btn">Book Now</a>
+                    <a href="#" class="user_header"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "../../blocks/header/blue_header.twig" %}
+
+    {% if location.location_page %}
+        {% include "../../blocks/header/bottom_header.twig" %}
+    {% endif %}
+    
+</header>
+<!--/HEADER-->

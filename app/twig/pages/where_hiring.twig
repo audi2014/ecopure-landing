@@ -1,0 +1,219 @@
+{# layout.twig #}
+
+
+<!--MAIN SCREEN-->
+<div class="main_screen where_hiring_main_screen">
+    <div class="container">
+        <div class="text_center">
+            <h1>{{ content.hiring_main.head }}</h1>
+            <div class="buttons_wrap">
+                <a href="{{ content.hiring_main.pricing_link }}" class="blue_radius_btn_border">Pricing</a>
+                <a href="{{ content.hiring_main.book_link }}" class="green_radius_btn_border">Book Now</a>
+            </div>
+            <h5>{{ content.hiring_main.caption }} <sup>TM</sup></h5>
+        </div>
+        <!--<img src="img/icons/main_screen_down_arrow_white.svg" class="arrow">-->
+        <a href="#about" class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+    </div>
+</div>
+<!--/MAIN SCREEN-->
+
+<!--ABOUT-->
+<div id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col_left">
+                <h2>{{  content.about.head }}</h2>
+                <p>{{ content.about.text_p1 }}</p>
+                <p>{{ content.about.text_p2 }}</p>
+            </div>
+            <div class="col-lg-5 col_right">
+                <div class="plans_wrap">
+                    <h2>{{ content.about.plans.title }}</h2>
+                    <h5>{{ content.about.plans.desc }}</h5>
+                    <p>{{ content.about.plans.plan_1 }}</p>
+                    <p>{{ content.about.plans.plan_2 }}</p>
+                    <p>{{ content.about.plans.plan_3 }}</p>
+                    <span>{{ content.about.plans.caption }}</span>
+                    <a href="{{ content.about.plans.redeem_link }}" class="green_radius_btn">Redeem Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ABOUT-->
+
+<!--LOVE-->
+<div class="love">
+    <div class="container">
+        <h2>{{ content.love.head }}</h2>
+        <p>{{ content.love.text }}</p>
+    </div>
+</div>
+<!--/LOVE-->
+
+<!--PROCESS-->
+<div class="process">
+    <div class="container">
+        <h2>{{ content.process.head }}</h2>
+        <ul>
+
+            {% for item in content.process.process_list %}
+                <li>
+                    <img src="{{ item.img }}">
+                    <h5>{{ item.title }}</h5>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+</div>
+<!--/PROCESS-->
+
+<!--METHODOLOGY-->
+<div class="methodology">
+    <div class="container">
+        <h2>{{ content.methodology.head }}</h2>
+        <h4>{{ content.methodology.desc }}</h4>
+        <p>{{ content.methodology.text }}</p>
+        <div class="methodology_wrap">
+            <ul class="methodology_item">
+                <li class="item_kitchen">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.kitchen.title}}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.kitchen.img}}">
+                            {{ content.methodology.methodology_items.kitchen.title}}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.kitchen.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="item_bathroom">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.bathroom.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.bathroom.img }}">
+                            {{ content.methodology.methodology_items.bathroom.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.kitchen.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="item_livingroom">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.living_room.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.living_room.img }}">
+                            {{ content.methodology.methodology_items.living_room.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.living_room.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="item_bedroom">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.bedroom.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.bedroom.img }}">
+                            {{ content.methodology.methodology_items.bedroom.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.bedroom.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="methodology_item">
+                <li class="item_workingroom">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.workingroom.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.workingroom.img }}">
+                            {{ content.methodology.methodology_items.bedroom.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.workingroom.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="item_babyroom">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.babyroom.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.babyroom.img }}">
+                            {{ content.methodology.methodology_items.bedroom.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.babyroom.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="item_services">
+                    <div class="img_methodology"></div>
+                    <h5>{{ content.methodology.methodology_items.services.title }}</h5>
+                    <div class="methodology_desc">
+                        <h6>
+                            <img src="{{ content.methodology.methodology_items.services.img }}">
+                            {{ content.methodology.methodology_items.services.title }}
+                        </h6>
+                        <ul>
+
+                            {% for item in content.methodology.methodology_items.services.desc_list %}
+                                <li><span>{{ item }}</span></li>
+                            {% endfor %}
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--/METHODOLOGY-->
+
+<!--FLEXIBLE PLANS-->
+<div class="flexible_plans">
+    <div class="container">
+        <h2>{{ content.flexible_plans.head }}</h2>
+
+        <h3>{{ content.flexible_plans.text }}</h3>
+        <a href="{{ content.flexible_plans.book_link }}" class="green_radius_btn">Book Now</a>
+    </div>
+</div>
+<!--/FLEXIBLE PLANS-->
+

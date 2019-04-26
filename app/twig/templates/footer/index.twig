@@ -1,0 +1,46 @@
+{# layout.twig #}
+
+<footer>
+    <div class="top_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col_left">
+                    <nav>
+                        <ul>
+
+                            {% for item in navigation.footer %}
+                                <li>
+                                    <a href="{{ item.path }}">{{ item.title }}</a>
+                                    <span>|</span>
+                                </li>
+                            {% endfor %}
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-5 col_right">
+                    <div class="footer_social">
+
+                        {% for item in footer.social %}
+                            <a href="{{ item.externalPath }}"><img src="{{ item.icon }}"></a>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col_left">
+                    <a href="{{ footer.docs.terms.link }}">{{ footer.docs.terms.title }}</a>
+                    <a href="{{ footer.docs.privacy.link }}">{{ footer.docs.privacy.title }}</a>
+                </div>
+                <div class="col-md-6 col_copy">
+                    {{ footer.copyright }}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
