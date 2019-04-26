@@ -8,10 +8,16 @@
 	"location": {
 		"address": "Hoboken, NJ",
 		"tel": "(201) 555-5555",
-		"isNewUser": true,
 		"isSessionActive": false,
 		"isBookingComplete": false,
-		"location_page": false
+		"location_page": true
+	},
+	"session_state": {
+		"is_new_user": false,
+		"is_active": false,
+		"is_active_first": false,
+		"is_not_active": false,
+		"is_not_active_first": true
 	},
 	"navigation": {
 		"global": [
@@ -55,6 +61,11 @@
 			{
 				"path": "#",
 				"title": "Franchising",
+				"isActive": false
+			},
+			{
+				"path": "#",
+				"title": "Property Managers",
 				"isActive": false
 			}
 		],
@@ -330,11 +341,11 @@
 			"head": "EcoPure Home Cleaning Process",
 			"process_list": [
 				{
-					"title": "Welcome Meeting",
+					"title": "Welcome <br>Meeting",
 					"img": "../../img/process1.jpg"
 				},
 				{
-					"title": "Bathrooms & Kitchen",
+					"title": "Bathrooms & <br>Kitchen",
 					"img": "../../img/process2.jpg"
 				},
 				{
@@ -342,11 +353,11 @@
 					"img": "../../img/process3.jpg"
 				},
 				{
-					"title": "Presentation Aromatherapy",
+					"title": "Presentation & <br>Aromatherapy",
 					"img": "../../img/process4.jpg"
 				},
 				{
-					"title": "Quality Control",
+					"title": "Quality <br>Control",
 					"img": "../../img/process5.jpg"
 				}
 			]

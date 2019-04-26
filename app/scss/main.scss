@@ -106,6 +106,21 @@ a {
   }
 }
 
+.transparent_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+  color: #99cc33;
+  text-decoration: none !important;
+  transition: $trans;
+
+  &:hover {
+    color: darken(#99cc33, 10%);
+  }
+}
+
 //HEADER
 
 header {
@@ -139,10 +154,11 @@ header.mobile_header {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    margin-left: 45px;
 
     li {
       position: relative;
-      margin-right: 80px;
+      margin-right: 40px;
 
       &:last-of-type {
         margin-right: 0;
@@ -162,8 +178,9 @@ header.mobile_header {
         display: none;
         height: inherit;
         width: max-content;
-        margin-top: 25px;
-        background-color: rgba(226, 227, 231, 0.9);
+        margin: 0;
+        margin-top: 46px;
+        background-color: rgba(241, 241, 241, 0.95);
 
         li {
           margin-right: 0;
@@ -171,9 +188,9 @@ header.mobile_header {
           border-left: 2px solid transparent;
           
           &:hover {
-            border-color: #009dde;
+            border-color: $green_hover;
             a {
-              color: #009dde;
+              color: $green_hover;
             }
           }
         }
@@ -191,6 +208,7 @@ header.mobile_header {
     }
 
     a, span {
+      padding: 20px 0;
       font-size: 18px;
       font-weight: 400;
       color: #333;
@@ -231,6 +249,10 @@ header.mobile_header {
     height: 47px;
     width: 156px;
     border-radius: 47px;
+  }
+
+  .transparent_btn {
+    margin-left: 15px;
   }
 
   .user_header {
@@ -1204,8 +1226,6 @@ nav {
     h5 {
       font-size: 26px;
       color: #99cc33;
-      max-width: 160px;
-      margin: 0 auto;
     }
   }
 }

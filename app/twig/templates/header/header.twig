@@ -1,22 +1,64 @@
 
+{% macro button(path, name) %}
+    <a href="{{ path }}" class="green_radius_btn">{{ name }}</a>
+{% endmacro %}
+{% import _self as action %}
+
+
+
+{% set log_in_link %}
+    <a href="{{ site.url.log_in_link }}" class="transparent_btn">Log In</a>
+{% endset %}
+
+{% set account_btn %}
+    <a href="{{ site.url.my_account_link }}" class="user_header"></a>
+{% endset %}
+
+
+
 <!--HEADER-->
 <header>
     <div class="top_header">
         <div class="container">
             <div class="row">
-                <div class="col-3 col_left">
+                <div class="col-2 col_left">
                     <a href="{{ site.url }}">
                         <img src="{{ site.assets }}/img/main_logo.png">
                     </a>
                 </div>
-                <div class="col-6 col_center">
+                <div class="col-7 col_center">
                 
                     {% include "../../blocks/header/top_nav.twig" %}
                     
                 </div>
                 <div class="col-3 col_right">
-                    <a href="{{ site.url.book_now }}" class="green_radius_btn">Book Now</a>
-                    <a href="#" class="user_header"></a>
+
+                    {% if session_state.is_new_user %}
+                        {{ action.button(site.url.get_started, "Get Started") }}
+                        {{ log_in_link }}
+
+                    {% elseif session_state.is_active %}
+                        {{ action.button(site.url.book_now, "Book Now") }}
+                        {{ account_btn }}
+
+                    {% elseif session_state.is_active_first %}
+                        {{ action.button(site.url.finish_booking, "FINISH BOOKING") }}
+                        {{ account_btn }}
+
+                    {% elseif session_state.is_not_active %}
+                        {{ action.button(site.url.book_now, "Book Now") }}
+                        {{ log_in_link }}
+
+                    {% elseif session_state.is_not_active_first %}
+                        {{ action.button(site.url.finish_booking, "FINISH BOOKING") }}
+                        {{ log_in_link }}
+
+                    {% else %}
+                        {{ action.button(site.url.get_started, "Get Started") }}
+                        {{ log_in_link }}
+
+                    {% endif %}
+
                 </div>
             </div>
         </div>

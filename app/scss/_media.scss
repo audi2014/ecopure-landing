@@ -27,117 +27,6 @@ $green_hover: #8DC63F;
 
   }
 
-  .top_header ul li {
-    margin-right: 40px;
-  }
-
-  .top_header ul a {
-    font-size: 18px;
-  }
-
-  .advantages {
-    position: relative;
-  }
-
-  .advantages .col_right {
-    position: absolute;
-    left: 100px;
-    top: 40px;
-  }
-
-  .advantages .col_right ul {
-    top: auto;
-    left: auto;
-  }
-
-  .advantages .col_left {
-    top: 170px;
-  }
-
-  .customers .customer_item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-  }
-
-                              //WHERE HIRING PAGE
-
-  .bottom_header li a {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .item_kitchen .methodology_desc {
-    left: 244px;
-  }
-
-  .item_bathroom .methodology_desc {
-    right: 0;
-  }
-
-  .item_livingroom .methodology_desc {
-    left: 0;
-  }
-
-  .item_bedroom .methodology_desc {
-    right: 210px;
-  }
-
-  .item_workingroom .methodology_desc {
-    right: 100px;
-  }
-
-  .item_services .methodology_desc {
-    left: 100px;
-  }
-
-  .where_hiring_main_screen .text_center h1 {
-    margin-bottom: 36px;
-  }
-
-  .where_hiring_main_screen .text_center h1 {
-    margin-bottom: 40px;
-  }
-
-  .main_screen .arrow_down {
-    margin-top: 10px;
-  }
-
-  .main_screen .text_center {
-    padding-top: 70px;
-  }
-
-  .where_hiring_main_screen {
-    padding-bottom: 170px;
-  }
-
-                                //HOW IT WORKS PAGE
-  .dashed_bottom {
-    height: 280px;
-  }
-
-  .how_it_works_page .left_item {
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-
-  .how_it_works_page .right_item {
-    margin-left: auto;
-    margin-bottom: 30px;
-  }
-
-  .how_it_works_page .row {
-    margin-bottom: 40px;
-  }
-
-  .how_it_works_page {
-    padding-top: 90px;
-  }
-}
-
-// Средние девайсы («таблетки», < 992px)
-@media (max-width: 991.98px) {
-
   header {
     display: none;
   }
@@ -396,6 +285,108 @@ $green_hover: #8DC63F;
     }
   }
 
+  .advantages {
+    position: relative;
+  }
+
+  .advantages .col_right {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+  }
+
+  .advantages .col_right ul {
+    top: auto;
+    left: auto;
+  }
+
+  .advantages .col_left {
+    top: 170px;
+  }
+
+  .customers .customer_item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+                              //WHERE HIRING PAGE
+
+  .bottom_header li a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item_kitchen .methodology_desc {
+    left: 244px;
+  }
+
+  .item_bathroom .methodology_desc {
+    right: 0;
+  }
+
+  .item_livingroom .methodology_desc {
+    left: 0;
+  }
+
+  .item_bedroom .methodology_desc {
+    right: 210px;
+  }
+
+  .item_workingroom .methodology_desc {
+    right: 100px;
+  }
+
+  .item_services .methodology_desc {
+    left: 100px;
+  }
+
+  .where_hiring_main_screen .text_center h1 {
+    margin-bottom: 36px;
+  }
+
+  .where_hiring_main_screen .text_center h1 {
+    margin-bottom: 40px;
+  }
+
+  .main_screen .arrow_down {
+    margin-top: 10px;
+  }
+
+  .main_screen .text_center {
+    padding-top: 70px;
+  }
+
+  .where_hiring_main_screen {
+    padding-bottom: 170px;
+  }
+
+                                //HOW IT WORKS PAGE
+  .dashed_bottom {
+    height: 280px;
+  }
+
+  .how_it_works_page .left_item {
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .how_it_works_page .right_item {
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+  .how_it_works_page .row {
+    margin-bottom: 40px;
+  }
+
+  .how_it_works_page {
+    padding-top: 90px;
+  }
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
 
 
   .main_screen {
