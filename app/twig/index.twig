@@ -24,12 +24,14 @@
         {% include "twig/templates/header/header.twig" %}
         {% include "twig/templates/header/mobile_header.twig" %}
 
-
         <!--MAIN SCREEN-->
-        {# {% include "twig/pages/home.twig" %} #}
-        {% include "twig/pages/where_hiring.twig" %}
-        {# {% include "twig/pages/how_it_works.twig" %} #}
+        {% block content %}
+        {% endblock %}
         <!--/MAIN SCREEN-->
+
+        {# {% include "twig/pages/home.twig" %} #}
+        {#{% include "twig/pages/where_hiring.twig" %}#}
+        {# {% include "twig/pages/how_it_works.twig" %} #}
 
         <!--FOOTER-->
         {% include "twig/templates/footer/index.twig" %}

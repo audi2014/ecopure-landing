@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: homeLanding layout
+Template Name: howitworks layout
 Template Post Type: post, page
 */
 $context = Timber\Timber::context();
@@ -22,7 +22,7 @@ $context = Timber\Timber::context();
 
 Timber\Timber::render(
     [
-        'twig/pages/home.twig'
+        'twig/pages/how_it_works.twig'
     ],
     $context
 );

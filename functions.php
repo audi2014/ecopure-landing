@@ -12,6 +12,7 @@ new \EcopureTheme\TimberConfiguration();
 
 
 add_filter('timber/context', function ($context) {
+    $site = new \Timber\Site();
 //    $context['headerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::HEADER_MENU);
 //    $context['footerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::FOOTER_MENU);
 //    $site = new \Timber\Site();
@@ -20,7 +21,8 @@ add_filter('timber/context', function ($context) {
 //    ];
 
     $moc = json_decode(file_get_contents(__DIR__ . '/app/twig/data/index.twig.json'), true);
-    $moc['site']['assets'] = (new \Timber\Site())->theme->link() . '/app';
+    $moc['site']['link'] = $site->link();
+    $moc['site']['assets'] = $site->theme->link() . '/app';
     foreach ($moc as $k => $v) {
         $context[$k] = $v;
     }
