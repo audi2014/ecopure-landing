@@ -1,0 +1,19 @@
+{
+  "name": "audi2014/ecopure-theme",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Artur Mich",
+      "email": "audi2014@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "timber/timber": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "EcopureTheme\\": "theme"
+    }
+  }
+}

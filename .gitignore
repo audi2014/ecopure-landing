@@ -1,5 +1,9 @@
 /node_modules/
 /dist/
+/vendor/
+/.idea/
+/app/twig/compiled/
+/**/composer.lock
 /.git/
 /**/_backstage
 /**/package-lock.json
