@@ -65,7 +65,7 @@ gulp.task('compile', function () {
 	var data = require('./app/twig/data/index.twig.json');
 
 	return gulp.src('app/twig/**/*.twig')
-		.pipe(twig({ data }))
+		.pipe(twig({ data ,base:'./app'}))
 		.pipe(gulp.dest('app/twig/compiled'))
 		.pipe(browserSync.reload({ stream: true }))
 });

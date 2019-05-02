@@ -22,14 +22,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-2 col_left">
-                    <a href="{{ site.url }}">
+                    <a href="{{ site.url.index }}">
                         <img src="{{ site.assets }}/img/main_logo.png">
                     </a>
                 </div>
                 <div class="col-7 col_center">
-                
-                    {% include "../../blocks/header/top_nav.twig" %}
-                    
+
+                    {% include "twig/blocks/header/top_nav.twig" %}
+
                 </div>
                 <div class="col-3 col_right">
 
@@ -64,10 +64,10 @@
         </div>
     </div>
 
-    {% include "../../blocks/header/blue_header.twig" %}
+    {% include "twig/blocks/header/blue_header.twig" %}
 
     {% if location.location_page %}
-        {% include "../../blocks/header/bottom_header.twig" %}
+        {% include "twig/blocks/header/bottom_header.twig" %}
     {% endif %}
     
 </header>
