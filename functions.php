@@ -8,24 +8,25 @@ new \EcopureTheme\AfterSetupTheme();
 new \EcopureTheme\EnqueueScripts();
 new \EcopureTheme\ThemeSupport();
 new \EcopureTheme\TimberConfiguration();
-//$ecopure_FetchPostMetadata = new \EcopureTheme\FetchPostMetadata();
 
 
-add_filter('timber/context', function ($context) {
-    $site = new \Timber\Site();
-//    $context['headerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::HEADER_MENU);
-//    $context['footerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::FOOTER_MENU);
+
+//add_filter('timber/context', function ($context) {
 //    $site = new \Timber\Site();
-//    $context['site'] = [
-//        'assets' => $site->theme->link() . '/app'
-//    ];
-
-    $moc = json_decode(file_get_contents(__DIR__ . '/app/twig/data/index.twig.json'), true);
-    $moc['site']['link'] = $site->link();
-    $moc['site']['assets'] = $site->theme->link() . '/app';
-    foreach ($moc as $k => $v) {
-        $context[$k] = $v;
-    }
-
-    return $context;
-});
+////    $context['headerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::HEADER_MENU);
+////    $context['footerMenu'] = new \Timber\Menu(\EcopureTheme\Constants::FOOTER_MENU);
+////    $site = new \Timber\Site();
+////    $context['site'] = [
+////        'assets' => $site->theme->link() . '/app'
+////    ];
+//
+////    $moc = json_decode(file_get_contents(__DIR__ . '/app/twig/data/index.twig.json'), true);
+//    $moc = [];
+//    $moc['site']['link'] = $site->link();
+//    $moc['site']['assets'] = $site->theme->link() . '/app';
+//    foreach ($moc as $k => $v) {
+//        $context[$k] = $v;
+//    }
+//
+//    return $context;
+//});

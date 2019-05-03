@@ -11,8 +11,8 @@ namespace EcopureTheme;
 
 class AfterSetupTheme {
     public function __construct() {
-        register_nav_menu( Constants::HEADER_MENU, __('Ecopure Header Menu'));
-        register_nav_menu( Constants::FOOTER_MENU, __('Ecopure Footer Menu'));
-        show_admin_bar(false);
+//        register_nav_menu( Constants::HEADER_MENU, __('Ecopure Header Menu'));
+//        register_nav_menu( Constants::FOOTER_MENU, __('Ecopure Footer Menu'));
+//        show_admin_bar(false);
     }
 }
